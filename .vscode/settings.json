@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["browserslist"]
+  "cSpell.words": ["browserslist"],
+  "editor.formatOnSave": true
 }

@@ -7,10 +7,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --fix ."
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "lint": "prettier --write . && eslint --fix ."
   },
   "browserslist": {
     "production": [
@@ -32,10 +29,28 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.9",
+    "prettier": "^2.0.5"
+  },
   "optionalDependencies": {
     "fibers": "^5.0.0",
     "node-sass": "^4.14.1",
     "sass": "^1.26.7",
     "typescript": "^3.9.5"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ]
   }
 }
