@@ -2,11 +2,15 @@ import React from "react";
 
 import { PureTaskList } from "./TaskList";
 import { taskData, actionsData } from "./Task.stories";
+import { withA11y } from "@storybook/addon-a11y";
 
 export default {
   component: PureTaskList,
   title: "TaskList",
-  decorators: [(story) => <div style={{ padding: "3rem" }}>{story()}</div>],
+  decorators: [
+    (story) => <div style={{ padding: "3rem" }}>{story()}</div>,
+    withA11y,
+  ],
   excludeStories: /.*Data$/,
 };
 
