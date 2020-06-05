@@ -7,7 +7,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "prettier --write . && eslint --fix ."
+    "lint": "prettier --write . && eslint --fix .",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "chromatic --project-token=2q214bba2a7"
   },
   "browserslist": {
     "production": [
@@ -27,18 +30,31 @@
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-redux": "^7.2.0",
+    "react-scripts": "3.4.1",
+    "redux": "^4.0.5"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addon-storyshots": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/preset-create-react-app": "^3.0.0",
+    "@storybook/react": "^5.3.19",
+    "chromatic": "^4.0.3",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.9",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "react-test-renderer": "^16.13.1"
   },
   "optionalDependencies": {
+    "bufferutil": "^4.0.1",
+    "canvas": "^2.6.1",
     "fibers": "^5.0.0",
     "node-sass": "^4.14.1",
     "sass": "^1.26.7",
-    "typescript": "^3.9.5"
+    "typescript": "^3.9.5",
+    "utf-8-validate": "^5.0.2"
   },
   "eslintConfig": {
     "extends": "react-app"

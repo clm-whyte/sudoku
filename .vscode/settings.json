@@ -1,4 +1,13 @@
 {
-  "cSpell.words": ["browserslist"],
+  "cSpell.words": [
+    "browserslist",
+    "noopener",
+    "noreferrer",
+    "onstatechange",
+    "onupdatefound",
+    "precached",
+    "storyshots",
+    "Taskbox"
+  ],
   "editor.formatOnSave": true
 }
