@@ -1,13 +1,14 @@
 import React from "react";
 import { action } from "@storybook/addon-actions";
 import { withKnobs, object } from "@storybook/addon-knobs/react";
+import { withA11y } from "@storybook/addon-a11y";
 
 import Task from "./Task";
 
 export default {
   component: Task,
   title: "Task",
-  decorators: [withKnobs],
+  decorators: [withKnobs, withA11y],
   excludeStories: /.*Data$/,
 };
 
