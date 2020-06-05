@@ -5,7 +5,8 @@
     "noreferrer",
     "onstatechange",
     "onupdatefound",
-    "precached"
+    "precached",
+    "storyshots"
   ],
   "editor.formatOnSave": true
 }
