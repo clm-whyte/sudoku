@@ -6,7 +6,8 @@
     "onstatechange",
     "onupdatefound",
     "precached",
-    "storyshots"
+    "storyshots",
+    "Taskbox"
   ],
   "editor.formatOnSave": true
 }
