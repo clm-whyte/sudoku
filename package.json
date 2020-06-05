@@ -40,16 +40,20 @@
     "@storybook/addons": "^5.3.19",
     "@storybook/preset-create-react-app": "^3.0.0",
     "@storybook/react": "^5.3.19",
+    "chromatic": "^4.0.3",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.9",
     "prettier": "^2.0.5",
     "react-test-renderer": "^16.13.1"
   },
   "optionalDependencies": {
+    "bufferutil": "^4.0.1",
+    "canvas": "^2.6.1",
     "fibers": "^5.0.0",
     "node-sass": "^4.14.1",
     "sass": "^1.26.7",
-    "typescript": "^3.9.5"
+    "typescript": "^3.9.5",
+    "utf-8-validate": "^5.0.2"
   },
   "eslintConfig": {
     "extends": "react-app"
