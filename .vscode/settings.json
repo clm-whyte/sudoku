@@ -9,7 +9,20 @@
     "storyshots",
     "Taskbox",
     "chromaui",
-    "bufferutil"
+    "bufferutil",
+    "leftarrow",
+    "rightarrow",
+    "uparrow",
+    "downarrow",
+    "selectall",
+    "HALFOFF",
+    "coord",
+    "rightclick",
+    "uncheck",
+    "unchecking",
+    "scrollable",
+    "Chai's",
+    "macbook"
   ],
   "editor.formatOnSave": true
 }
