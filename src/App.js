@@ -4,7 +4,7 @@ import store from "./lib/redux";
 
 import InboxScreen from "./components/InboxScreen";
 
-import "./index.css";
+import "./index.scss";
 function App() {
   return (
     <Provider store={store}>
