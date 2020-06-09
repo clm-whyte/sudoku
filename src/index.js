@@ -7,10 +7,10 @@ import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />,
     <div className="sudoku">
       <Game />
     </div>
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
