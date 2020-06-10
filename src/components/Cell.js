@@ -1,13 +1,11 @@
 import React from "react";
 
-class Cell extends React.Component {
-  render() {
-    return (
-      <button className="cell" onClick={() => this.props.onClick()}>
-        {this.props.value}
-      </button>
-    );
-  }
+function Cell(props) {
+  return (
+    <button className="cell" onClick={props.onClick}>
+      {props.value}
+    </button>
+  );
 }
 
 export default Cell;
