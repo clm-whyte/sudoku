@@ -1,6 +1,6 @@
 import React from "react";
 import { action } from "@storybook/addon-actions";
-import { withKnobs, object } from "@storybook/addon-knobs/react";
+import { withKnobs, number } from "@storybook/addon-knobs/react";
 import { withA11y } from "@storybook/addon-a11y";
 
 import Cell from "./Cell";
@@ -13,10 +13,7 @@ export default {
 };
 
 export const cellData = {
-  id: "1",
   value: 1,
-  state: "1",
-  isSelected: false,
 };
 
 export const actionsData = {
@@ -24,5 +21,9 @@ export const actionsData = {
 };
 
 export const Empty = () => {
-  return <Cell cell={object("cell", { ...cellData })} {...actionsData} />;
+  return <Cell {...actionsData} />;
 };
+
+export const ElementFilled = () => (
+  <Cell value={number("Value", 1)} {...actionsData}></Cell>
+);
