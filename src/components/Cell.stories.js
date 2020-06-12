@@ -15,6 +15,7 @@ export default {
 export const cellData = {
   id: "1",
   value: 1,
+  state: "1",
   isSelected: false,
 };
 
