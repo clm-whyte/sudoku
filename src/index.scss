@@ -1,3 +1,14 @@
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
 .cell {
   background: #fff;
   border: 1px solid #999;

@@ -10,7 +10,7 @@ class Cell extends React.Component {
 
   render() {
     return (
-      <button className="cell" onClick={() => this.setState({ value: 1 })}>
+      <button className="cell" onClick={() => this.setState({ value: "1" })}>
         {this.state.value}
       </button>
     );
