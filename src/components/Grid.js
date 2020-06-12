@@ -9,8 +9,16 @@ class Grid extends React.Component {
     };
   }
 
+  handleClick(i) {
+    const cells = this.state.cells.slice();
+    cells[i] = "1";
+    this.setState({ cells });
+  }
+
   renderCell(i) {
-    return <Cell value={this.state[i]} />;
+    return (
+      <Cell value={this.state.cells[i]} onClick={() => this.handleClick(i)} />
+    );
   }
 
   render() {
