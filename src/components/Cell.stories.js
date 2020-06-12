@@ -20,8 +20,7 @@ export const cellData = {
 };
 
 export const actionsData = {
-  onSelectCell: action("onSelectCell"),
-  onEnterDigit: action("onEnterDigit"),
+  onClick: action("onClick"),
 };
 
 export const Empty = () => {
