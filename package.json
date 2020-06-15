@@ -34,9 +34,7 @@
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-redux": "^7.2.0",
     "react-scripts": "3.4.1",
-    "redux": "^4.0.5",
     "source-map-explorer": "^2.4.2"
   },
   "devDependencies": {
@@ -46,14 +44,14 @@
     "@storybook/addon-links": "^5.3.19",
     "@storybook/addon-storyshots": "^5.3.19",
     "@storybook/addons": "^5.3.19",
-    "@storybook/preset-create-react-app": "^3.0.0",
+    "@storybook/preset-create-react-app": "^3.0.1",
     "@storybook/react": "^5.3.19",
     "chromatic": "^4.0.3",
-    "cypress": "^4.7.0",
+    "cypress": "^4.8.0",
     "eslint-plugin-chai-friendly": "^0.6.0",
     "eslint-plugin-cypress": "^2.11.1",
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.9",
+    "lint-staged": "^10.2.10",
     "prettier": "^2.0.5",
     "react-test-renderer": "^16.13.1"
   },
