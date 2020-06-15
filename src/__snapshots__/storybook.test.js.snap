@@ -1,5 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Cell Element Filled 1`] = `
+<button
+  className="cell"
+  onClick={[Function]}
+>
+  1
+</button>
+`;
+
 exports[`Storyshots Cell Empty 1`] = `
 <button
   className="cell"
