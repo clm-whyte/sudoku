@@ -8,7 +8,6 @@ class Grid extends React.Component {
     for (let i = 0; i < 9; i++) {
       grid.push(Array(9).fill(null));
     }
-
     this.state = { cells: grid };
   }
 
@@ -34,23 +33,15 @@ class Grid extends React.Component {
       rows.push(this.renderCell(rowNumber, col));
     }
 
-    return <div>{rows}</div>;
+    return <div key={rowNumber}>{rows}</div>;
   }
 
   render() {
-    return (
-      <div>
-        {this.renderRow(0)}
-        {this.renderRow(1)}
-        {this.renderRow(2)}
-        {this.renderRow(3)}
-        {this.renderRow(4)}
-        {this.renderRow(5)}
-        {this.renderRow(6)}
-        {this.renderRow(7)}
-        {this.renderRow(8)}
-      </div>
-    );
+    let grid = [];
+    for (let i = 0; i < 9; i++) {
+      grid.push(this.renderRow(i));
+    }
+    return <div>{grid}</div>;
   }
 }
 
