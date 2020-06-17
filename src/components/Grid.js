@@ -4,19 +4,12 @@ import Cell from "./Cell";
 class Grid extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      cells: [
-        [null, null, null, null, null, null, null, null, null],
-        [null, null, null, null, null, null, null, null, null],
-        [null, null, null, null, null, null, null, null, null],
-        [null, null, null, null, null, null, null, null, null],
-        [null, null, null, null, null, null, null, null, null],
-        [null, null, null, null, null, null, null, null, null],
-        [null, null, null, null, null, null, null, null, null],
-        [null, null, null, null, null, null, null, null, null],
-        [null, null, null, null, null, null, null, null, null],
-      ],
-    };
+    let grid = [];
+    for (let i = 0; i < 9; i++) {
+      grid.push(Array(9).fill(null));
+    }
+
+    this.state = { cells: grid };
   }
 
   handleClick(row, col) {
@@ -29,25 +22,19 @@ class Grid extends React.Component {
     return (
       <Cell
         value={this.state.cells[row][col]}
+        key={this.state.cells[row].length * row + col}
         onClick={() => this.handleClick(row, col)}
       />
     );
   }
 
   renderRow(rowNumber) {
-    return (
-      <div className="grid-row">
-        {this.renderCell(rowNumber, 0)}
-        {this.renderCell(rowNumber, 1)}
-        {this.renderCell(rowNumber, 2)}
-        {this.renderCell(rowNumber, 3)}
-        {this.renderCell(rowNumber, 4)}
-        {this.renderCell(rowNumber, 5)}
-        {this.renderCell(rowNumber, 6)}
-        {this.renderCell(rowNumber, 7)}
-        {this.renderCell(rowNumber, 8)}
-      </div>
-    );
+    let rows = [];
+    for (var col = 0; col < 9; col++) {
+      rows.push(this.renderCell(rowNumber, col));
+    }
+
+    return <div>{rows}</div>;
   }
 
   render() {
