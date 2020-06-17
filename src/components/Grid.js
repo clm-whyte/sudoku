@@ -5,19 +5,32 @@ class Grid extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      cells: Array(9 * 9).fill(null),
+      cells: [
+        [null, null, null, null, null, null, null, null, null],
+        [null, null, null, null, null, null, null, null, null],
+        [null, null, null, null, null, null, null, null, null],
+        [null, null, null, null, null, null, null, null, null],
+        [null, null, null, null, null, null, null, null, null],
+        [null, null, null, null, null, null, null, null, null],
+        [null, null, null, null, null, null, null, null, null],
+        [null, null, null, null, null, null, null, null, null],
+        [null, null, null, null, null, null, null, null, null],
+      ],
     };
   }
 
-  handleClick(i) {
+  handleClick(row, col) {
     const cells = this.state.cells.slice();
-    cells[i] = "1";
+    cells[row][col] = cells[row].length * row + col;
     this.setState({ cells });
   }
 
-  renderCell(i) {
+  renderCell(row, col) {
     return (
-      <Cell value={this.state.cells[i]} onClick={() => this.handleClick(i)} />
+      <Cell
+        value={this.state.cells[row][col]}
+        onClick={() => this.handleClick(row, col)}
+      />
     );
   }
 
@@ -25,103 +38,103 @@ class Grid extends React.Component {
     return (
       <div>
         <div className="grid-row">
-          {this.renderCell(0)}
-          {this.renderCell(1)}
-          {this.renderCell(2)}
-          {this.renderCell(3)}
-          {this.renderCell(4)}
-          {this.renderCell(5)}
-          {this.renderCell(6)}
-          {this.renderCell(7)}
-          {this.renderCell(8)}
+          {this.renderCell(0, 0)}
+          {this.renderCell(0, 1)}
+          {this.renderCell(0, 2)}
+          {this.renderCell(0, 3)}
+          {this.renderCell(0, 4)}
+          {this.renderCell(0, 5)}
+          {this.renderCell(0, 6)}
+          {this.renderCell(0, 7)}
+          {this.renderCell(0, 8)}
         </div>
         <div className="grid-row">
-          {this.renderCell(9)}
-          {this.renderCell(10)}
-          {this.renderCell(11)}
-          {this.renderCell(12)}
-          {this.renderCell(13)}
-          {this.renderCell(14)}
-          {this.renderCell(15)}
-          {this.renderCell(16)}
-          {this.renderCell(17)}
+          {this.renderCell(1, 0)}
+          {this.renderCell(1, 1)}
+          {this.renderCell(1, 2)}
+          {this.renderCell(1, 3)}
+          {this.renderCell(1, 4)}
+          {this.renderCell(1, 5)}
+          {this.renderCell(1, 6)}
+          {this.renderCell(1, 7)}
+          {this.renderCell(1, 8)}
         </div>
         <div className="grid-row">
-          {this.renderCell(18)}
-          {this.renderCell(19)}
-          {this.renderCell(20)}
-          {this.renderCell(21)}
-          {this.renderCell(22)}
-          {this.renderCell(23)}
-          {this.renderCell(24)}
-          {this.renderCell(25)}
-          {this.renderCell(26)}
+          {this.renderCell(2, 1)}
+          {this.renderCell(2, 2)}
+          {this.renderCell(2, 0)}
+          {this.renderCell(2, 3)}
+          {this.renderCell(2, 4)}
+          {this.renderCell(2, 5)}
+          {this.renderCell(2, 6)}
+          {this.renderCell(2, 7)}
+          {this.renderCell(2, 8)}
         </div>
         <div className="grid-row">
-          {this.renderCell(27)}
-          {this.renderCell(28)}
-          {this.renderCell(29)}
-          {this.renderCell(30)}
-          {this.renderCell(31)}
-          {this.renderCell(32)}
-          {this.renderCell(33)}
-          {this.renderCell(34)}
-          {this.renderCell(35)}
+          {this.renderCell(3, 1)}
+          {this.renderCell(3, 2)}
+          {this.renderCell(3, 0)}
+          {this.renderCell(3, 3)}
+          {this.renderCell(3, 4)}
+          {this.renderCell(3, 5)}
+          {this.renderCell(3, 6)}
+          {this.renderCell(3, 7)}
+          {this.renderCell(3, 8)}
         </div>
         <div className="grid-row">
-          {this.renderCell(36)}
-          {this.renderCell(37)}
-          {this.renderCell(38)}
-          {this.renderCell(39)}
-          {this.renderCell(40)}
-          {this.renderCell(41)}
-          {this.renderCell(42)}
-          {this.renderCell(43)}
-          {this.renderCell(44)}
+          {this.renderCell(4, 1)}
+          {this.renderCell(4, 2)}
+          {this.renderCell(4, 0)}
+          {this.renderCell(4, 3)}
+          {this.renderCell(4, 4)}
+          {this.renderCell(4, 5)}
+          {this.renderCell(4, 6)}
+          {this.renderCell(4, 7)}
+          {this.renderCell(4, 8)}
         </div>
         <div className="grid-row">
-          {this.renderCell(45)}
-          {this.renderCell(46)}
-          {this.renderCell(47)}
-          {this.renderCell(48)}
-          {this.renderCell(49)}
-          {this.renderCell(50)}
-          {this.renderCell(51)}
-          {this.renderCell(52)}
-          {this.renderCell(53)}
+          {this.renderCell(5, 0)}
+          {this.renderCell(5, 1)}
+          {this.renderCell(5, 2)}
+          {this.renderCell(5, 3)}
+          {this.renderCell(5, 4)}
+          {this.renderCell(5, 5)}
+          {this.renderCell(5, 6)}
+          {this.renderCell(5, 7)}
+          {this.renderCell(5, 8)}
         </div>
         <div className="grid-row">
-          {this.renderCell(54)}
-          {this.renderCell(55)}
-          {this.renderCell(56)}
-          {this.renderCell(57)}
-          {this.renderCell(58)}
-          {this.renderCell(59)}
-          {this.renderCell(60)}
-          {this.renderCell(61)}
-          {this.renderCell(62)}
+          {this.renderCell(6, 0)}
+          {this.renderCell(6, 1)}
+          {this.renderCell(6, 2)}
+          {this.renderCell(6, 3)}
+          {this.renderCell(6, 4)}
+          {this.renderCell(6, 5)}
+          {this.renderCell(6, 6)}
+          {this.renderCell(6, 7)}
+          {this.renderCell(6, 8)}
         </div>
         <div className="grid-row">
-          {this.renderCell(63)}
-          {this.renderCell(64)}
-          {this.renderCell(65)}
-          {this.renderCell(66)}
-          {this.renderCell(67)}
-          {this.renderCell(68)}
-          {this.renderCell(69)}
-          {this.renderCell(70)}
-          {this.renderCell(71)}
+          {this.renderCell(7, 1)}
+          {this.renderCell(7, 2)}
+          {this.renderCell(7, 0)}
+          {this.renderCell(7, 3)}
+          {this.renderCell(7, 4)}
+          {this.renderCell(7, 5)}
+          {this.renderCell(7, 6)}
+          {this.renderCell(7, 7)}
+          {this.renderCell(7, 8)}
         </div>
         <div className="grid-row">
-          {this.renderCell(72)}
-          {this.renderCell(73)}
-          {this.renderCell(74)}
-          {this.renderCell(75)}
-          {this.renderCell(76)}
-          {this.renderCell(77)}
-          {this.renderCell(78)}
-          {this.renderCell(79)}
-          {this.renderCell(80)}
+          {this.renderCell(8, 1)}
+          {this.renderCell(8, 2)}
+          {this.renderCell(8, 0)}
+          {this.renderCell(8, 3)}
+          {this.renderCell(8, 4)}
+          {this.renderCell(8, 5)}
+          {this.renderCell(8, 6)}
+          {this.renderCell(8, 7)}
+          {this.renderCell(8, 8)}
         </div>
       </div>
     );
