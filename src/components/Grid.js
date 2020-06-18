@@ -22,6 +22,7 @@ class Grid extends React.Component {
       <Cell
         value={this.state.cells[row][col]}
         key={this.state.cells[row].length * row + col}
+        cellID={`cell-${row}/${col}`}
         onClick={() => this.handleClick(row, col)}
       />
     );
@@ -35,12 +36,20 @@ class Grid extends React.Component {
         row.push(this.renderCell(rowNumber, colNumber));
       }
       grid.push(
-        <div key={"row" + rowNumber} className="grid-row">
+        <div
+          data-test={`row-${rowNumber}`}
+          key={"row" + rowNumber}
+          className="grid-row"
+        >
           {row}
         </div>
       );
     }
-    return <div>{grid}</div>;
+    return (
+      <div data-test="grid" className="grid">
+        {grid}
+      </div>
+    );
   }
 }
 
