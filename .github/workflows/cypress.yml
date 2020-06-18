@@ -14,3 +14,7 @@ jobs:
         with:
           browser: chrome
           spec: cypress/integration/sudoku.spec.js
+          record: true
+        env:
+          CYPRESS_RECORD_KEY: 5a070de5-0692-4fae-91e1-a65324ed6b57
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
