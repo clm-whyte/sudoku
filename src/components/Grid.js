@@ -30,10 +30,15 @@ class Grid extends React.Component {
   render() {
     let grid = [];
     for (let rowNumber = 0; rowNumber < 9; rowNumber++) {
-      grid.push(<div key={"row" + rowNumber} className="grid-row"></div>);
+      let row = [];
       for (let colNumber = 0; colNumber < 9; colNumber++) {
-        grid.push(this.renderCell(rowNumber, colNumber));
+        row.push(this.renderCell(rowNumber, colNumber));
       }
+      grid.push(
+        <div key={"row" + rowNumber} className="grid-row">
+          {row}
+        </div>
+      );
     }
     return <div>{grid}</div>;
   }
