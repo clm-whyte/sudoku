@@ -24,6 +24,22 @@
   width: 34px;
 }
 
+.box-border-top {
+  border-top-width: thick;
+}
+
+.box-border-left {
+  border-left-width: thick;
+}
+
+.box-border-bottom {
+  border-bottom-width: thick;
+}
+
+.box-border-right {
+  border-right-width: thick;
+}
+
 .cell:focus {
   outline: none;
 }

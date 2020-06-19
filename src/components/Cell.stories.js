@@ -15,6 +15,9 @@ export default {
 export const cellData = {
   cellID: 1,
   value: 1,
+  row: 1,
+  col: 1,
+  className: "cell",
 };
 
 export const actionsData = {
@@ -26,5 +29,5 @@ export const Empty = () => {
 };
 
 export const ElementFilled = () => (
-  <Cell value={number("Value", 1)} {...actionsData}></Cell>
+  <Cell {...cellData} value={number("Value", 1)} {...actionsData}></Cell>
 );
