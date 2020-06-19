@@ -6,7 +6,8 @@ import "./index.scss";
 class Game extends React.Component {
   render() {
     return (
-      <div className="game">
+      <div role="main" className="game">
+        <h1>$ sudo --ku</h1>
         <Grid />
       </div>
     );

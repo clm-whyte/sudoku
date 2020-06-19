@@ -13,6 +13,7 @@ export default {
 };
 
 export const cellData = {
+  cellID: 1,
   value: 1,
 };
 
@@ -21,7 +22,7 @@ export const actionsData = {
 };
 
 export const Empty = () => {
-  return <Cell {...actionsData} />;
+  return <Cell {...cellData} value={null} {...actionsData} />;
 };
 
 export const ElementFilled = () => (
