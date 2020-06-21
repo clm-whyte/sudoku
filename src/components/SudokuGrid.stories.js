@@ -3,10 +3,10 @@ import { action } from "@storybook/addon-actions";
 import { withKnobs } from "@storybook/addon-knobs/react";
 import { withA11y } from "@storybook/addon-a11y";
 
-import Grid from "./Grid";
+import SudokuGrid from "./SudokuGrid";
 
 export default {
-  component: Grid,
+  component: SudokuGrid,
   title: "Grid",
   decorators: [withKnobs, withA11y],
   excludeStories: /.*Data$/,
@@ -21,5 +21,5 @@ export const actionsData = {
 };
 
 export const Empty = () => {
-  return <Grid {...actionsData} />;
+  return <SudokuGrid {...actionsData} />;
 };

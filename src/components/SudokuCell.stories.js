@@ -3,10 +3,10 @@ import { action } from "@storybook/addon-actions";
 import { withKnobs, number } from "@storybook/addon-knobs/react";
 import { withA11y } from "@storybook/addon-a11y";
 
-import Cell from "./Cell";
+import SudokuCell from "./SudokuCell";
 
 export default {
-  component: Cell,
+  component: SudokuCell,
   title: "Cell",
   decorators: [withKnobs, withA11y],
   excludeStories: /.*Data$/,
@@ -25,9 +25,13 @@ export const actionsData = {
 };
 
 export const Empty = () => {
-  return <Cell {...cellData} value={null} {...actionsData} />;
+  return <SudokuCell {...cellData} value={null} {...actionsData} />;
 };
 
 export const ElementFilled = () => (
-  <Cell {...cellData} value={number("Value", 1)} {...actionsData}></Cell>
+  <SudokuCell
+    {...cellData}
+    value={number("Value", 1)}
+    {...actionsData}
+  ></SudokuCell>
 );
