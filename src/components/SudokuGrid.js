@@ -1,7 +1,8 @@
 import React from "react";
-import Cell from "./Cell";
+import SudokuCell from "./SudokuCell";
+import Grid from "@material-ui/core/Grid";
 
-class Grid extends React.Component {
+class SudokuGrid extends React.Component {
   constructor(props) {
     super(props);
     let grid = [];
@@ -19,7 +20,7 @@ class Grid extends React.Component {
 
   renderCell(row, col) {
     return (
-      <Cell
+      <SudokuCell
         value={this.state.cells[row][col]}
         key={this.state.cells[row].length * row + col}
         cellID={`cell-${row}/${col}`}
@@ -48,12 +49,8 @@ class Grid extends React.Component {
         </div>
       );
     }
-    return (
-      <div data-test="grid" className="grid">
-        {grid}
-      </div>
-    );
+    return <Grid data-test="grid">{grid}</Grid>;
   }
 }
 
-export default Grid;
+export default SudokuGrid;
