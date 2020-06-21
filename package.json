@@ -13,7 +13,7 @@
     "chromatic": "chromatic --project-token=2q214bba2a7",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run --spec cypress/integration/sudoku.spec.js"
   },
   "browserslist": {
     "production": [
