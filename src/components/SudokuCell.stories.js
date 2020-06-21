@@ -32,6 +32,17 @@ export const ElementFilled = () => (
   <SudokuCell
     {...cellData}
     value={number("Value", 1)}
+    row={number("Row", 1)}
+    col={number("Column", 1)}
     {...actionsData}
   ></SudokuCell>
 );
+
+export const SideBySide = () => {
+  return (
+    <div>
+      <SudokuCell {...cellData} value={null} {...actionsData} />
+      <SudokuCell {...cellData} value={null} {...actionsData} />
+    </div>
+  );
+};
