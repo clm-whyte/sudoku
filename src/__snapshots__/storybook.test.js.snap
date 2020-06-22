@@ -3,7 +3,12 @@
 exports[`Storyshots Cell Element Filled 1`] = `
 <button
   aria-label={1}
-  className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+  className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
   data-test={1}
   disabled={false}
   onBlur={[Function]}
@@ -18,20 +23,6 @@ exports[`Storyshots Cell Element Filled 1`] = `
   onTouchEnd={[Function]}
   onTouchMove={[Function]}
   onTouchStart={[Function]}
-  style={
-    Object {
-      "border": "1px solid rgba(0, 0, 0, 0.23)",
-      "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-      "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-      "borderRadius": 0,
-      "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-      "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-      "maxHeight": "34px",
-      "maxWidth": "34px",
-      "minHeight": "34px",
-      "minWidth": "34px",
-    }
-  }
   tabIndex={0}
   type="button"
 >
@@ -46,7 +37,12 @@ exports[`Storyshots Cell Element Filled 1`] = `
 exports[`Storyshots Cell Empty 1`] = `
 <button
   aria-label={1}
-  className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+  className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
   data-test={1}
   disabled={false}
   onBlur={[Function]}
@@ -61,20 +57,6 @@ exports[`Storyshots Cell Empty 1`] = `
   onTouchEnd={[Function]}
   onTouchMove={[Function]}
   onTouchStart={[Function]}
-  style={
-    Object {
-      "border": "1px solid rgba(0, 0, 0, 0.23)",
-      "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-      "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-      "borderRadius": 0,
-      "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-      "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-      "maxHeight": "34px",
-      "maxWidth": "34px",
-      "minHeight": "34px",
-      "minWidth": "34px",
-    }
-  }
   tabIndex={0}
   type="button"
 >
@@ -88,7 +70,12 @@ exports[`Storyshots Cell Side By Side 1`] = `
 <div>
   <button
     aria-label={1}
-    className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+    className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
     data-test={1}
     disabled={false}
     onBlur={[Function]}
@@ -103,20 +90,6 @@ exports[`Storyshots Cell Side By Side 1`] = `
     onTouchEnd={[Function]}
     onTouchMove={[Function]}
     onTouchStart={[Function]}
-    style={
-      Object {
-        "border": "1px solid rgba(0, 0, 0, 0.23)",
-        "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-        "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-        "borderRadius": 0,
-        "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-        "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-        "maxHeight": "34px",
-        "maxWidth": "34px",
-        "minHeight": "34px",
-        "minWidth": "34px",
-      }
-    }
     tabIndex={0}
     type="button"
   >
@@ -126,7 +99,12 @@ exports[`Storyshots Cell Side By Side 1`] = `
   </button>
   <button
     aria-label={1}
-    className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+    className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
     data-test={1}
     disabled={false}
     onBlur={[Function]}
@@ -141,20 +119,6 @@ exports[`Storyshots Cell Side By Side 1`] = `
     onTouchEnd={[Function]}
     onTouchMove={[Function]}
     onTouchStart={[Function]}
-    style={
-      Object {
-        "border": "1px solid rgba(0, 0, 0, 0.23)",
-        "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-        "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-        "borderRadius": 0,
-        "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-        "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-        "maxHeight": "34px",
-        "maxWidth": "34px",
-        "minHeight": "34px",
-        "minWidth": "34px",
-      }
-    }
     tabIndex={0}
     type="button"
   >
@@ -176,7 +140,12 @@ exports[`Storyshots Grid Empty 1`] = `
   >
     <button
       aria-label="cell-0/0"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-0/0"
       disabled={false}
       onBlur={[Function]}
@@ -191,20 +160,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -214,7 +169,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-0/1"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        
+        
+        "
       data-test="cell-0/1"
       disabled={false}
       onBlur={[Function]}
@@ -229,20 +189,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -252,7 +198,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-0/2"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        
+        
+        "
       data-test="cell-0/2"
       disabled={false}
       onBlur={[Function]}
@@ -267,20 +218,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -290,7 +227,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-0/3"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-0/3"
       disabled={false}
       onBlur={[Function]}
@@ -305,20 +247,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -328,7 +256,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-0/4"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        
+        
+        "
       data-test="cell-0/4"
       disabled={false}
       onBlur={[Function]}
@@ -343,20 +276,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -366,7 +285,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-0/5"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        
+        
+        "
       data-test="cell-0/5"
       disabled={false}
       onBlur={[Function]}
@@ -381,20 +305,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -404,7 +314,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-0/6"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-0/6"
       disabled={false}
       onBlur={[Function]}
@@ -419,20 +334,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -442,7 +343,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-0/7"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        
+        
+        "
       data-test="cell-0/7"
       disabled={false}
       onBlur={[Function]}
@@ -457,20 +363,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -480,7 +372,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-0/8"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        
+        boxBoundaryRight
+        "
       data-test="cell-0/8"
       disabled={false}
       onBlur={[Function]}
@@ -495,20 +392,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "2px solid black",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -523,7 +406,12 @@ exports[`Storyshots Grid Empty 1`] = `
   >
     <button
       aria-label="cell-1/0"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-1/0"
       disabled={false}
       onBlur={[Function]}
@@ -538,20 +426,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -561,7 +435,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-1/1"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-1/1"
       disabled={false}
       onBlur={[Function]}
@@ -576,20 +455,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -599,7 +464,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-1/2"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-1/2"
       disabled={false}
       onBlur={[Function]}
@@ -614,20 +484,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -637,7 +493,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-1/3"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-1/3"
       disabled={false}
       onBlur={[Function]}
@@ -652,20 +513,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -675,7 +522,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-1/4"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-1/4"
       disabled={false}
       onBlur={[Function]}
@@ -690,20 +542,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -713,7 +551,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-1/5"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-1/5"
       disabled={false}
       onBlur={[Function]}
@@ -728,20 +571,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -751,7 +580,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-1/6"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-1/6"
       disabled={false}
       onBlur={[Function]}
@@ -766,20 +600,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -789,7 +609,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-1/7"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-1/7"
       disabled={false}
       onBlur={[Function]}
@@ -804,20 +629,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -827,7 +638,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-1/8"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        boxBoundaryRight
+        "
       data-test="cell-1/8"
       disabled={false}
       onBlur={[Function]}
@@ -842,20 +658,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "2px solid black",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -870,7 +672,12 @@ exports[`Storyshots Grid Empty 1`] = `
   >
     <button
       aria-label="cell-2/0"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-2/0"
       disabled={false}
       onBlur={[Function]}
@@ -885,20 +692,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -908,7 +701,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-2/1"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-2/1"
       disabled={false}
       onBlur={[Function]}
@@ -923,20 +721,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -946,7 +730,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-2/2"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-2/2"
       disabled={false}
       onBlur={[Function]}
@@ -961,20 +750,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -984,7 +759,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-2/3"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-2/3"
       disabled={false}
       onBlur={[Function]}
@@ -999,20 +779,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1022,7 +788,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-2/4"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-2/4"
       disabled={false}
       onBlur={[Function]}
@@ -1037,20 +808,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1060,7 +817,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-2/5"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-2/5"
       disabled={false}
       onBlur={[Function]}
@@ -1075,20 +837,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1098,7 +846,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-2/6"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-2/6"
       disabled={false}
       onBlur={[Function]}
@@ -1113,20 +866,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1136,7 +875,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-2/7"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-2/7"
       disabled={false}
       onBlur={[Function]}
@@ -1151,20 +895,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1174,7 +904,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-2/8"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        boxBoundaryRight
+        "
       data-test="cell-2/8"
       disabled={false}
       onBlur={[Function]}
@@ -1189,20 +924,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "2px solid black",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1217,7 +938,12 @@ exports[`Storyshots Grid Empty 1`] = `
   >
     <button
       aria-label="cell-3/0"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-3/0"
       disabled={false}
       onBlur={[Function]}
@@ -1232,20 +958,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1255,7 +967,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-3/1"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        
+        
+        "
       data-test="cell-3/1"
       disabled={false}
       onBlur={[Function]}
@@ -1270,20 +987,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1293,7 +996,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-3/2"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        
+        
+        "
       data-test="cell-3/2"
       disabled={false}
       onBlur={[Function]}
@@ -1308,20 +1016,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1331,7 +1025,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-3/3"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-3/3"
       disabled={false}
       onBlur={[Function]}
@@ -1346,20 +1045,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1369,7 +1054,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-3/4"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        
+        
+        "
       data-test="cell-3/4"
       disabled={false}
       onBlur={[Function]}
@@ -1384,20 +1074,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1407,7 +1083,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-3/5"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        
+        
+        "
       data-test="cell-3/5"
       disabled={false}
       onBlur={[Function]}
@@ -1422,20 +1103,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1445,7 +1112,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-3/6"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-3/6"
       disabled={false}
       onBlur={[Function]}
@@ -1460,20 +1132,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1483,7 +1141,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-3/7"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        
+        
+        "
       data-test="cell-3/7"
       disabled={false}
       onBlur={[Function]}
@@ -1498,20 +1161,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1521,7 +1170,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-3/8"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        
+        boxBoundaryRight
+        "
       data-test="cell-3/8"
       disabled={false}
       onBlur={[Function]}
@@ -1536,20 +1190,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "2px solid black",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1564,7 +1204,12 @@ exports[`Storyshots Grid Empty 1`] = `
   >
     <button
       aria-label="cell-4/0"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-4/0"
       disabled={false}
       onBlur={[Function]}
@@ -1579,20 +1224,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1602,7 +1233,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-4/1"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-4/1"
       disabled={false}
       onBlur={[Function]}
@@ -1617,20 +1253,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1640,7 +1262,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-4/2"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-4/2"
       disabled={false}
       onBlur={[Function]}
@@ -1655,20 +1282,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1678,7 +1291,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-4/3"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-4/3"
       disabled={false}
       onBlur={[Function]}
@@ -1693,20 +1311,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1716,7 +1320,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-4/4"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-4/4"
       disabled={false}
       onBlur={[Function]}
@@ -1731,20 +1340,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1754,7 +1349,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-4/5"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-4/5"
       disabled={false}
       onBlur={[Function]}
@@ -1769,20 +1369,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1792,7 +1378,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-4/6"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-4/6"
       disabled={false}
       onBlur={[Function]}
@@ -1807,20 +1398,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1830,7 +1407,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-4/7"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-4/7"
       disabled={false}
       onBlur={[Function]}
@@ -1845,20 +1427,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1868,7 +1436,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-4/8"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        boxBoundaryRight
+        "
       data-test="cell-4/8"
       disabled={false}
       onBlur={[Function]}
@@ -1883,20 +1456,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "2px solid black",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1911,7 +1470,12 @@ exports[`Storyshots Grid Empty 1`] = `
   >
     <button
       aria-label="cell-5/0"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-5/0"
       disabled={false}
       onBlur={[Function]}
@@ -1926,20 +1490,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1949,7 +1499,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-5/1"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-5/1"
       disabled={false}
       onBlur={[Function]}
@@ -1964,20 +1519,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -1987,7 +1528,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-5/2"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-5/2"
       disabled={false}
       onBlur={[Function]}
@@ -2002,20 +1548,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2025,7 +1557,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-5/3"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-5/3"
       disabled={false}
       onBlur={[Function]}
@@ -2040,20 +1577,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2063,7 +1586,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-5/4"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-5/4"
       disabled={false}
       onBlur={[Function]}
@@ -2078,20 +1606,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2101,7 +1615,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-5/5"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-5/5"
       disabled={false}
       onBlur={[Function]}
@@ -2116,20 +1635,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2139,7 +1644,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-5/6"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-5/6"
       disabled={false}
       onBlur={[Function]}
@@ -2154,20 +1664,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2177,7 +1673,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-5/7"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-5/7"
       disabled={false}
       onBlur={[Function]}
@@ -2192,20 +1693,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2215,7 +1702,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-5/8"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        boxBoundaryRight
+        "
       data-test="cell-5/8"
       disabled={false}
       onBlur={[Function]}
@@ -2230,20 +1722,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "2px solid black",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2258,7 +1736,12 @@ exports[`Storyshots Grid Empty 1`] = `
   >
     <button
       aria-label="cell-6/0"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-6/0"
       disabled={false}
       onBlur={[Function]}
@@ -2273,20 +1756,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2296,7 +1765,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-6/1"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        
+        
+        "
       data-test="cell-6/1"
       disabled={false}
       onBlur={[Function]}
@@ -2311,20 +1785,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2334,7 +1794,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-6/2"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        
+        
+        "
       data-test="cell-6/2"
       disabled={false}
       onBlur={[Function]}
@@ -2349,20 +1814,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2372,7 +1823,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-6/3"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-6/3"
       disabled={false}
       onBlur={[Function]}
@@ -2387,20 +1843,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2410,7 +1852,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-6/4"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        
+        
+        "
       data-test="cell-6/4"
       disabled={false}
       onBlur={[Function]}
@@ -2425,20 +1872,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2448,7 +1881,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-6/5"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        
+        
+        "
       data-test="cell-6/5"
       disabled={false}
       onBlur={[Function]}
@@ -2463,20 +1901,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2486,7 +1910,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-6/6"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-6/6"
       disabled={false}
       onBlur={[Function]}
@@ -2501,20 +1930,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2524,7 +1939,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-6/7"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        
+        
+        "
       data-test="cell-6/7"
       disabled={false}
       onBlur={[Function]}
@@ -2539,20 +1959,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2562,7 +1968,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-6/8"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        boxBoundaryTop
+        
+        
+        boxBoundaryRight
+        "
       data-test="cell-6/8"
       disabled={false}
       onBlur={[Function]}
@@ -2577,20 +1988,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "2px solid black",
-          "borderTop": "2px solid black",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2605,7 +2002,12 @@ exports[`Storyshots Grid Empty 1`] = `
   >
     <button
       aria-label="cell-7/0"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-7/0"
       disabled={false}
       onBlur={[Function]}
@@ -2620,20 +2022,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2643,7 +2031,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-7/1"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-7/1"
       disabled={false}
       onBlur={[Function]}
@@ -2658,20 +2051,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2681,7 +2060,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-7/2"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-7/2"
       disabled={false}
       onBlur={[Function]}
@@ -2696,20 +2080,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2719,7 +2089,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-7/3"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-7/3"
       disabled={false}
       onBlur={[Function]}
@@ -2734,20 +2109,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2757,7 +2118,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-7/4"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-7/4"
       disabled={false}
       onBlur={[Function]}
@@ -2772,20 +2138,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2795,7 +2147,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-7/5"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-7/5"
       disabled={false}
       onBlur={[Function]}
@@ -2810,20 +2167,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2833,7 +2176,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-7/6"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        boxBoundaryLeft
+        
+        "
       data-test="cell-7/6"
       disabled={false}
       onBlur={[Function]}
@@ -2848,20 +2196,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2871,7 +2205,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-7/7"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        "
       data-test="cell-7/7"
       disabled={false}
       onBlur={[Function]}
@@ -2886,20 +2225,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2909,7 +2234,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-7/8"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        boxBoundaryRight
+        "
       data-test="cell-7/8"
       disabled={false}
       onBlur={[Function]}
@@ -2924,20 +2254,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "2px solid black",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2952,7 +2268,12 @@ exports[`Storyshots Grid Empty 1`] = `
   >
     <button
       aria-label="cell-8/0"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        boxBoundaryBottom
+        boxBoundaryLeft
+        
+        "
       data-test="cell-8/0"
       disabled={false}
       onBlur={[Function]}
@@ -2967,20 +2288,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "2px solid black",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -2990,7 +2297,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-8/1"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        boxBoundaryBottom
+        
+        
+        "
       data-test="cell-8/1"
       disabled={false}
       onBlur={[Function]}
@@ -3005,20 +2317,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "2px solid black",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -3028,7 +2326,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-8/2"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        boxBoundaryBottom
+        
+        
+        "
       data-test="cell-8/2"
       disabled={false}
       onBlur={[Function]}
@@ -3043,20 +2346,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "2px solid black",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -3066,7 +2355,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-8/3"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        boxBoundaryBottom
+        boxBoundaryLeft
+        
+        "
       data-test="cell-8/3"
       disabled={false}
       onBlur={[Function]}
@@ -3081,20 +2375,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "2px solid black",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -3104,7 +2384,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-8/4"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        boxBoundaryBottom
+        
+        
+        "
       data-test="cell-8/4"
       disabled={false}
       onBlur={[Function]}
@@ -3119,20 +2404,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "2px solid black",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -3142,7 +2413,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-8/5"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        boxBoundaryBottom
+        
+        
+        "
       data-test="cell-8/5"
       disabled={false}
       onBlur={[Function]}
@@ -3157,20 +2433,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "2px solid black",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -3180,7 +2442,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-8/6"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        boxBoundaryBottom
+        boxBoundaryLeft
+        
+        "
       data-test="cell-8/6"
       disabled={false}
       onBlur={[Function]}
@@ -3195,20 +2462,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "2px solid black",
-          "borderLeft": "2px solid black",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -3218,7 +2471,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-8/7"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        boxBoundaryBottom
+        
+        
+        "
       data-test="cell-8/7"
       disabled={false}
       onBlur={[Function]}
@@ -3233,20 +2491,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "2px solid black",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >
@@ -3256,7 +2500,12 @@ exports[`Storyshots Grid Empty 1`] = `
     </button>
     <button
       aria-label="cell-8/8"
-      className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+      className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        boxBoundaryBottom
+        
+        boxBoundaryRight
+        "
       data-test="cell-8/8"
       disabled={false}
       onBlur={[Function]}
@@ -3271,20 +2520,6 @@ exports[`Storyshots Grid Empty 1`] = `
       onTouchEnd={[Function]}
       onTouchMove={[Function]}
       onTouchStart={[Function]}
-      style={
-        Object {
-          "border": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderBottom": "2px solid black",
-          "borderLeft": "1px solid rgba(0, 0, 0, 0.23)",
-          "borderRadius": 0,
-          "borderRight": "2px solid black",
-          "borderTop": "1px solid rgba(0, 0, 0, 0.23)",
-          "maxHeight": "34px",
-          "maxWidth": "34px",
-          "minHeight": "34px",
-          "minWidth": "34px",
-        }
-      }
       tabIndex={0}
       type="button"
     >

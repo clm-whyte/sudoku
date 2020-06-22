@@ -25,7 +25,6 @@ class SudokuGrid extends React.Component {
         key={this.state.cells[row].length * row + col}
         cellID={`cell-${row}/${col}`}
         onClick={() => this.handleClick(row, col)}
-        className={"cell"}
         row={row}
         col={col}
       />
