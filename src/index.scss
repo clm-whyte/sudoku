@@ -1,0 +1,24 @@
+$cellSize: 34px;
+$cellBorder: 1px solid rgba(0, 0, 0, 0.23);
+$boxBorder: 2px solid black;
+
+.sudokuCell {
+  max-width: 34px;
+  max-height: $cellSize;
+  min-width: 34px;
+  min-height: $cellSize;
+  border: $cellBorder;
+  border-radius: 0;
+}
+.boxBoundaryTop {
+  border-top: $boxBorder;
+}
+.boxBoundaryBottom {
+  border-bottom: $boxBorder;
+}
+.boxBoundaryLeft {
+  border-left: $boxBorder;
+}
+.boxBoundaryRight {
+  border-right: $boxBorder;
+}
