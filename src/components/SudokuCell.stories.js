@@ -18,6 +18,7 @@ export const cellData = {
   row: 1,
   col: 1,
   className: "cell",
+  selected: false,
 };
 
 export const actionsData = {
@@ -59,6 +60,14 @@ export const InnerCorner = () => {
   return (
     <div>
       <SudokuCell {...cellData} row={2} col={2} {...actionsData} />
+    </div>
+  );
+};
+
+export const Selected = () => {
+  return (
+    <div>
+      <SudokuCell {...cellData} selected={true} {...actionsData} />
     </div>
   );
 };
