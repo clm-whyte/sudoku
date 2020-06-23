@@ -1,3 +1,4 @@
+// Cell
 $cellSize: 34px;
 $cellBorder: 1px solid rgba(0, 0, 0, 0.23);
 $boxBorder: 1px solid black;
@@ -29,7 +30,9 @@ $selectedColor: lightGrey;
   background-color: pink;
 }
 
+// Grid
 $gridWidth: ($cellSize * 9);
+
 .grid {
   border: $boxBorder;
   width: $gridWidth;
