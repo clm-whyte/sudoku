@@ -10,13 +10,12 @@ export default function SudokuCell(props) {
         aria-label={props.cellID}
         data-test={props.cellID}
         onClick={props.onClick}
-        selected={props.selected}
         className={`sudokuCell
-        ${props.row % 3 === 0 ? "boxBoundaryTop" : ""}
-        ${props.row % 3 === 2 ? "boxBoundaryBottom" : ""}
-        ${props.row === 8 ? "boxBoundaryBottom" : ""}
-        ${props.col % 3 === 0 ? "boxBoundaryLeft" : ""}
         ${props.col % 3 === 2 ? "boxBoundaryRight" : ""}
+        ${props.row % 3 === 2 ? "boxBoundaryBottom" : ""}
+        ${props.col % 3 === 0 ? "boxBoundaryLeft" : ""}
+        ${props.row % 3 === 0 ? "boxBoundaryTop" : ""}
+        ${props.row === 8 ? "boxBoundaryBottom" : ""}
         ${props.col === 8 ? "boxBoundaryRight" : ""}
         ${props.selected ? "selected" : ""}
         `}
