@@ -27,6 +27,7 @@ class SudokuGrid extends React.Component {
         onClick={() => this.handleClick(row, col)}
         row={row}
         col={col}
+        selected={this.state.selected}
       />
     );
   }
@@ -48,7 +49,11 @@ class SudokuGrid extends React.Component {
         </div>
       );
     }
-    return <Grid data-test="grid">{grid}</Grid>;
+    return (
+      <Grid className="grid" data-test="grid">
+        {grid}
+      </Grid>
+    );
   }
 }
 

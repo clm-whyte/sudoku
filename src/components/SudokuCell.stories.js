@@ -46,3 +46,19 @@ export const SideBySide = () => {
     </div>
   );
 };
+
+export const OuterCorner = () => {
+  return (
+    <div>
+      <SudokuCell {...cellData} row={0} col={0} {...actionsData} />
+    </div>
+  );
+};
+
+export const InnerCorner = () => {
+  return (
+    <div>
+      <SudokuCell {...cellData} row={2} col={2} {...actionsData} />
+    </div>
+  );
+};

@@ -1,6 +1,7 @@
 $cellSize: 34px;
 $cellBorder: 1px solid rgba(0, 0, 0, 0.23);
-$boxBorder: 2px solid black;
+$boxBorder: 1px solid black;
+$selectedColor: lightGrey;
 
 .sudokuCell {
   max-width: 34px;
@@ -9,6 +10,8 @@ $boxBorder: 2px solid black;
   min-height: $cellSize;
   border: $cellBorder;
   border-radius: 0;
+  background-color: white;
+  color: navy;
 }
 .boxBoundaryTop {
   border-top: $boxBorder;
@@ -21,4 +24,13 @@ $boxBorder: 2px solid black;
 }
 .boxBoundaryRight {
   border-right: $boxBorder;
+}
+.selected {
+  background-color: pink;
+}
+
+$gridWidth: ($cellSize * 9);
+.grid {
+  border: $boxBorder;
+  width: $gridWidth;
 }
