@@ -11,10 +11,13 @@ export default function SudokuCell(props) {
         data-test={props.cellID}
         onClick={props.onClick}
         className={`sudokuCell
+        ${props.col % 3 === 2 ? "boxBoundaryRight" : ""}
+        ${props.row % 3 === 2 ? "boxBoundaryBottom" : ""}
+        ${props.col % 3 === 0 ? "boxBoundaryLeft" : ""}
         ${props.row % 3 === 0 ? "boxBoundaryTop" : ""}
         ${props.row === 8 ? "boxBoundaryBottom" : ""}
-        ${props.col % 3 === 0 ? "boxBoundaryLeft" : ""}
         ${props.col === 8 ? "boxBoundaryRight" : ""}
+        ${props.selected ? "selected" : ""}
         `}
       >
         {props.value}

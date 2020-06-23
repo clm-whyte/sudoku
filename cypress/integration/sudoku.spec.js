@@ -1,6 +1,4 @@
 /// <reference types="Cypress" />
-const testCell = '"cell-0/0"';
-
 describe("Sudoku E2E Tests", () => {
   beforeEach(() => {
     cy.visit("http://localhost:3000");
@@ -25,6 +23,7 @@ describe("Sudoku E2E Tests", () => {
   it("clicks the first cell", () => {
     cy.get('[data-test="cell-0/0"]').click();
     cy.get('[data-test="cell-0/0"]').should("have.text", 0);
+    cy.get('[data-test="cell-0/0"]').should("have.class", "selected");
     cy.checkA11y();
   });
 });

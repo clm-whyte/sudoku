@@ -7,21 +7,22 @@ class SudokuGrid extends React.Component {
     super(props);
     let grid = [];
     for (let i = 0; i < 9; i++) {
-      grid.push(Array(9).fill(null));
+      grid.push(Array(9).fill({ value: null, selected: false }));
     }
     this.state = { cells: grid };
   }
 
   handleClick(row, col) {
     const cells = this.state.cells.slice();
-    cells[row][col] = cells[row].length * row + col;
+    cells[row][col] = { value: cells[row].length * row + col, selected: true };
     this.setState({ cells });
   }
 
   renderCell(row, col) {
     return (
       <SudokuCell
-        value={this.state.cells[row][col]}
+        value={this.state.cells[row][col].value}
+        selected={this.state.cells[row][col].selected}
         key={this.state.cells[row].length * row + col}
         cellID={`cell-${row}/${col}`}
         onClick={() => this.handleClick(row, col)}
@@ -48,7 +49,11 @@ class SudokuGrid extends React.Component {
         </div>
       );
     }
-    return <Grid data-test="grid">{grid}</Grid>;
+    return (
+      <Grid className="grid" data-test="grid">
+        {grid}
+      </Grid>
+    );
   }
 }
 

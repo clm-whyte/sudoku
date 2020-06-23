@@ -18,6 +18,7 @@ export const cellData = {
   row: 1,
   col: 1,
   className: "cell",
+  selected: false,
 };
 
 export const actionsData = {
@@ -38,11 +39,26 @@ export const ElementFilled = () => (
   ></SudokuCell>
 );
 
-export const SideBySide = () => {
+export const OuterCorner = () => {
   return (
     <div>
-      <SudokuCell {...cellData} value={null} {...actionsData} />
-      <SudokuCell {...cellData} value={null} {...actionsData} />
+      <SudokuCell {...cellData} row={0} col={0} {...actionsData} />
+    </div>
+  );
+};
+
+export const InnerCorner = () => {
+  return (
+    <div>
+      <SudokuCell {...cellData} row={2} col={2} {...actionsData} />
+    </div>
+  );
+};
+
+export const Selected = () => {
+  return (
+    <div>
+      <SudokuCell {...cellData} selected={true} {...actionsData} />
     </div>
   );
 };
