@@ -12,6 +12,12 @@ class SudokuGrid extends React.Component {
     this.state = { cells: grid };
   }
 
+  deselectCells(index) {
+    if (index.selected === true) {
+      index.selected = false;
+    }
+  }
+
   handleClick(row, col) {
     const cells = this.state.cells.slice();
     cells[row][col] = { value: cells[row].length * row + col, selected: true };
