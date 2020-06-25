@@ -9,23 +9,30 @@ import Game from "./Game";
 import SudokuGrid from "./components/SudokuGrid";
 import SudokuCell from "./components/SudokuCell";
 
+function emptyGrid() {
+  const grid = [];
+  for (let i = 0; i < 9; i++) {
+    grid.push(Array(9).fill({ value: null, selected: false }));
+  }
+  return grid;
+}
+
 test("verify that app contains game", () => {
   const app = shallow(<App />);
   const game = <Game />;
   expect(app).toContainReact(game);
+  app.unmount();
 });
 
 test("verify that game contains grid", () => {
   const game = shallow(<Game />);
   const grid = <SudokuGrid />;
   expect(game).toContainReact(grid);
+  game.unmount();
 });
 
 test("test shallow render of Sudoku Grid", () => {
-  const grid = [];
-  for (let i = 0; i < 9; i++) {
-    grid.push(Array(9).fill({ value: null, selected: false }));
-  }
+  const grid = emptyGrid();
 
   const sudokuGrid = shallow(<SudokuGrid state={grid} />);
   expect(sudokuGrid).toMatchSnapshot();
@@ -33,10 +40,7 @@ test("test shallow render of Sudoku Grid", () => {
 });
 
 test("test state change of Sudoku Grid", () => {
-  const empty = [];
-  for (let i = 0; i < 9; i++) {
-    empty.push(Array(9).fill({ value: null, selected: false }));
-  }
+  const empty = emptyGrid();
 
   const selected = empty.slice();
   selected[0] = selected[0].map((cell, index) => {
@@ -54,4 +58,5 @@ test("test state change of Sudoku Grid", () => {
   expect(sudokuGrid.state().cells).toEqual(selected);
   sudokuGrid.instance().deselectAllCells();
   expect(sudokuGrid.state().cells).toEqual(empty);
+  sudokuGrid.unmount();
 });
