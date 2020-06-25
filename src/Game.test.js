@@ -33,30 +33,59 @@ test("verify that game contains grid", () => {
 
 test("test shallow render of Sudoku Grid", () => {
   const grid = emptyGrid();
-
   const sudokuGrid = shallow(<SudokuGrid state={grid} />);
   expect(sudokuGrid).toMatchSnapshot();
   sudokuGrid.unmount();
 });
 
 test("test state change of Sudoku Grid", () => {
-  const empty = emptyGrid();
-
-  const selected = empty.slice();
-  selected[0] = selected[0].map((cell, index) => {
+  const gridBefore = emptyGrid();
+  const gridAfter = gridBefore.slice();
+  gridAfter[0] = gridAfter[0].map((cell, index) => {
     if (index === 0) {
       return (cell = { value: 0, selected: true });
     }
     return cell;
   });
 
-  const sudokuGrid = shallow(<SudokuGrid state={empty} />);
+  const sudokuGrid = shallow(<SudokuGrid state={gridBefore} />);
   const cell = sudokuGrid.find(SudokuCell).at(0);
 
-  expect(sudokuGrid.state().cells).toEqual(empty);
+  expect(sudokuGrid.state().cells).toEqual(gridBefore);
   cell.simulate("click");
-  expect(sudokuGrid.state().cells).toEqual(selected);
+  expect(sudokuGrid.state().cells).toEqual(gridAfter);
   sudokuGrid.instance().deselectAllCells();
-  expect(sudokuGrid.state().cells).toEqual(empty);
+  expect(sudokuGrid.state().cells).toEqual(gridBefore);
   sudokuGrid.unmount();
+});
+
+test("after clicking multiple cells on the same row one after the other, clicked cells are numbered and only the last cell is highlighted", () => {
+  const gridBefore = emptyGrid();
+  const gridAfter = gridBefore.slice();
+  gridAfter[0] = [
+    { value: 0, selected: false },
+    { value: 1, selected: false },
+    { value: 2, selected: false },
+    { value: null, selected: false },
+    { value: null, selected: false },
+    { value: null, selected: false },
+    { value: null, selected: false },
+    { value: null, selected: false },
+    { value: 8, selected: true },
+  ];
+
+  const sudokuGrid = shallow(<SudokuGrid state={gridBefore} />);
+  const cell0 = sudokuGrid.find(SudokuCell).at(0);
+  const cell1 = sudokuGrid.find(SudokuCell).at(1);
+  const cell2 = sudokuGrid.find(SudokuCell).at(2);
+  const cell8 = sudokuGrid.find(SudokuCell).at(8);
+
+  expect(sudokuGrid.state().cells).toEqual(gridBefore);
+
+  cell0.simulate("click");
+  cell1.simulate("click");
+  cell2.simulate("click");
+  cell8.simulate("click");
+
+  expect(sudokuGrid.state().cells).toEqual(gridAfter);
 });
