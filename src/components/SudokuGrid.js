@@ -5,11 +5,24 @@ import Grid from "@material-ui/core/Grid";
 class SudokuGrid extends React.Component {
   constructor(props) {
     super(props);
-    let grid = [];
+    const grid = [];
     for (let i = 0; i < 9; i++) {
       grid.push(Array(9).fill({ value: null, selected: false }));
     }
     this.state = { cells: grid };
+  }
+
+  deselectAllCells() {
+    const cells = this.state.cells.slice();
+    for (let i = 0; i < 9; i++) {
+      cells[i] = cells[i].map((cell, index) => {
+        if (index === 0) {
+          return (cell = { value: null, selected: false });
+        }
+        return cell;
+      });
+    }
+    this.setState({ cells });
   }
 
   handleClick(row, col) {
