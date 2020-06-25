@@ -12,14 +12,15 @@ class SudokuGrid extends React.Component {
     this.state = { cells: grid };
   }
 
-  deselectCell(index) {
-    index.selected = false;
-  }
-
   deselectAllCells() {
     const cells = this.state.cells.slice();
-    for (let row = 0; row < cells[row].length; row++) {
-      cells[row].forEach(this.deselectCell);
+    for (let i = 0; i < 9; i++) {
+      cells[i] = cells[i].map((cell, index) => {
+        if (index === 0) {
+          return (cell = { value: null, selected: false });
+        }
+        return cell;
+      });
     }
     this.setState({ cells });
   }
