@@ -64,6 +64,10 @@ Using Source Map Explorer, analyzes JavaScript bundles using the source maps. Th
 
 ## Workflow
 
+### Developing a New Component
+
+### Adding New Functionality
+
 ## Links to Project Resources
 
 <!-- markdownlint-disable MD033 -->
