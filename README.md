@@ -1,8 +1,10 @@
 # Sudoku
 
-## Available Scripts
+**This Sudoku project is primarily an exercise for me to develop my own projects, utilizing best practices for automated testing and to learn just enough Javascript, React and GraphQL to be dangerous.**
 
-In the project directory, you can run:  
+## Available Scripts
+<!-- markdownlint-disable MD033 -->
+<details>
 
 ### `npm start`
 
@@ -58,6 +60,7 @@ Uploads the current Storybook to [Chromatic](https://www.chromatic.com/builds?ap
 ### `npm run analyze`
 
 Using Source Map Explorer, analyzes JavaScript bundles using the source maps. This helps to learn where code bloat is coming from.
+</details>
 
 ## Workflow
 
