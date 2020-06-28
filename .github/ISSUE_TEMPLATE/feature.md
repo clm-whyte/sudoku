@@ -6,6 +6,10 @@ labels: ""
 assignees: ""
 ---
 
-## Description
+### Description
 
-## Links to Tasks and Feature Requests
+*A thorough description of the feature to be completed.*
+
+### Links to Tasks and Feature Requests
+
+- [ ] [*Task Name*](https://github.com/clm-whyte/sudoku/projects/)
