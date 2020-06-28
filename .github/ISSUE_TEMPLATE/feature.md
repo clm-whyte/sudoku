@@ -1,6 +1,6 @@
 ---
 name: Feature
-about: Definition of an Overarching Feature
+about: Definition of an overarching feature
 title: ""
 labels: ""
 assignees: ""
