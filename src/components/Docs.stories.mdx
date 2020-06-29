@@ -1,0 +1,36 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+
+import SudokuCell from "./SudokuCell.js";
+
+<Meta title="Docs/Cell" component={SudokuCell} />
+
+# Cell
+
+Let's define a story for our `Cell` component:
+
+<Story name="Default">
+  <SudokuCell></SudokuCell>
+</Story>
+
+We can drop it in a `Preview` to get a code snippet:
+
+<Preview>
+  <Story name="Filled">
+    <SudokuCell row="1" column="1">
+      9
+    </SudokuCell>
+  </Story>
+</Preview>
+
+We can even preview multiple stories in a block. This
+gets rendered as a group, but defines individual stories
+with unique URLs and isolated snapshot tests.
+
+<Preview>
+  <Story name="Unselected">
+    <SudokuCell></SudokuCell>
+  </Story>
+  <Story name="Selected">
+    <SudokuCell selected="true"></SudokuCell>
+  </Story>
+</Preview>

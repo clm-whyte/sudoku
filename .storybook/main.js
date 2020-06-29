@@ -6,6 +6,13 @@ module.exports = {
     "@storybook/addon-knobs",
     "@storybook/addon-a11y/register",
     "@storybook/addon-links",
-    "@storybook/addon-docs",
+    {
+      name: "@storybook/addon-docs",
+      options: {
+        configureJSX: true,
+        babelOptions: {},
+        sourceLoaderOptions: null,
+      },
+    },
   ],
 };
