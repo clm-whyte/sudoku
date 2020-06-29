@@ -40,6 +40,7 @@
   "devDependencies": {
     "@storybook/addon-a11y": "^5.3.19",
     "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-docs": "^5.3.19",
     "@storybook/addon-knobs": "^5.3.19",
     "@storybook/addon-links": "^5.3.19",
     "@storybook/addon-storyshots": "^5.3.19",
@@ -60,12 +61,15 @@
     "react-test-renderer": "^16.13.1"
   },
   "optionalDependencies": {
+    "babel-loader": "^8.1.0",
     "bufferutil": "^4.0.1",
     "canvas": "^2.6.1",
     "fibers": "^5.0.0",
+    "react-is": "^16.13.1",
     "sass": "^1.26.7",
     "typescript": "^3.9.5",
-    "utf-8-validate": "^5.0.2"
+    "utf-8-validate": "^5.0.2",
+    "vue": "^2.6.11"
   },
   "eslintConfig": {
     "extends": [
@@ -85,7 +89,11 @@
       "!<rootDir>/node_modules/",
       "!src/serviceWorker.js",
       "!src/index.js"
-    ]
+    ],
+    "transform": {
+      "^.+\\.[tj]sx?$": "babel-jest",
+      "^.+\\.mdx$": "@storybook/addon-docs/jest-transform-mdx"
+    }
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
