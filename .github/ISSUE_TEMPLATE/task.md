@@ -2,8 +2,8 @@
 name: Task
 about: The smallest unit of work
 title: ""
-labels: ""
-assignees: ""
+labels: "task"
+assignees: "clm-whyte"
 ---
 
 ### Description

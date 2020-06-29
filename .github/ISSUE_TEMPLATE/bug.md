@@ -2,8 +2,8 @@
 name: Bug
 about: The fix for an existing issue
 title: ""
-labels: ""
-assignees: ""
+labels: "bug"
+assignees: "clm-whyte"
 ---
 
 ### Current Behaviour / Expected Behaviour

@@ -2,8 +2,8 @@
 name: Feature
 about: Definition of an overarching feature
 title: ""
-labels: ""
-assignees: ""
+labels: "feature"
+assignees: "clm-whyte"
 ---
 
 ### Description
