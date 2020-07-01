@@ -1,0 +1,17 @@
+import { action } from '@storybook/addon-actions';
+import { withKnobs } from '@storybook/addon-knobs/react';
+import { withA11y } from '@storybook/addon-a11y';
+import SudokuGrid from './SudokuGrid';
+import { Meta, Story } from '@storybook/addon-docs/blocks';
+
+<Meta component={SudokuGrid} title='Grid' decorators={[withKnobs, withA11y]} />
+
+export const gridData = {
+  value: 1,
+};
+export const actionsData = {
+  onClick: action('onClick'),
+};
+<Story name='Empty'>{() => {
+    return <SudokuGrid {...actionsData} />;
+  }}</Story>
