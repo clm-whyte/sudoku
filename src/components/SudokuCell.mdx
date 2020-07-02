@@ -1,20 +1,68 @@
 import { Story, Preview } from "@storybook/addon-docs/blocks";
 import SudokuCell from "./SudokuCell.js";
 
-<Anchor storyId="cell--empty" />
-
 # Cell
 
-I'm going to try and add a little bit about the default Cell here.
+In standard Sudoku, the grid is made up of 81 **cells** in a 9x9 square (9 rows and 9 columns).  
+The **cells** are arranged into 3x3 sections called **boxes**, which are outlined in bold.
 
-<Story id="cell--empty" />
+## Default
+
+By default, a cell is has no value, is unselected and has a thin grey outline.  
+The cells are **Material UI** Buttons which have been restyled using some Sassy CSS.
+
+```css
+.sudokuCell {
+  max-width: 34px;
+  max-height: $cellSize;
+  min-width: 34px;
+  min-height: $cellSize;
+  border: $cellBorder;
+  border-radius: 0;
+  background-color: white;
+  color: navy;
+}
+```
+
+<Preview>
+  <Story id="cell--empty" />
+</Preview>
+
+## Position
+
+A cell's position in the grid determines it's outline.  
+If it's in the first row/column, it will have a thick top/left border respectively.  
+Otherwise, every 3rd row/column is given a thick bottom/right border, based on the following lines of code:
+
+```javascript
+${props.col % 3 === 2 ? "boxBoundaryRight" : ""}
+${props.row % 3 === 2 ? "boxBoundaryBottom" : ""}
+```
 
 <Preview>
   <Story id="cell--empty"></Story>
-  <Story id="cell--element-filled"></Story>
+  <Story id="cell--outer-corner"></Story>
+  <Story id="cell--inner-corner"></Story>
+</Preview>
+
+## Selection
+
+By default a cell is unselected.  
+An unselected cell has a white background and may or may not be filled with a value.
+
+On click, any currently selected cells are deselected, and the clicked cell becomes the only selected cell, as shown by the pink background colour.
+
+<Preview>
+  <Story id="cell--empty"></Story>
   <Story id="cell--selected"></Story>
 </Preview>
 
-Maybe I'll go and add some random Cell elements here, who knows!?
+## Value
 
-<SudokuCell value="7" row="0" col="0" />
+The value of a cell is displayed in the centre. Currently, a value is applied when clicked.  
+That is to say, all cells default to a value of `null`. When clicked, the cell's value is set to the cell's ID, it's position in the grid.
+
+<Preview>
+  <Story id="cell--empty"></Story>
+  <Story id="cell--filled"></Story>
+</Preview>
