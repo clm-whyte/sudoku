@@ -1,5 +1,4 @@
 import React from "react";
-import { action } from "@storybook/addon-actions";
 
 import mdx from "./SudokuGrid.mdx";
 
@@ -16,14 +15,6 @@ export default {
   },
 };
 
-export const gridData = {
-  value: 1,
-};
-
-export const actionsData = {
-  onClick: action("onClick"),
-};
-
-export const Empty = () => {
-  return <SudokuGrid {...actionsData} />;
+export const Grid = () => {
+  return <SudokuGrid />;
 };

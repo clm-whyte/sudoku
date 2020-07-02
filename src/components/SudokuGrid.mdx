@@ -3,10 +3,11 @@ import SudokuGrid from "./SudokuGrid.js";
 
 # Grid
 
-I'm going to try and add a little bit about the default Cell here.
+The Grid component currently handles the most of the logic for rendering the Cells.  
+The grid is a 2D array of cells which contain a `value` and `selected` property.
 
-<Story id="grid--empty" />
+Since the cell is a functional component, all of the props that the cell requires are passed to it via the Grid component.
 
 <Preview>
-  <Story id="grid--empty"></Story>
+  <Story id="grid--grid" />
 </Preview>

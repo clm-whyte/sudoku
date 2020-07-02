@@ -32,16 +32,14 @@ export const actionsData = {
 
 export const Cell = () => {
   return (
-    <div>
-      <SudokuCell
-        {...cellData}
-        value={number("Value", null)}
-        row={number("Row", 1)}
-        col={number("Column", 1)}
-        selected={boolean("Selected", false)}
-        {...actionsData}
-      />
-    </div>
+    <SudokuCell
+      {...cellData}
+      value={number("Value", null)}
+      row={number("Row", 1)}
+      col={number("Column", 1)}
+      selected={boolean("Selected", false)}
+      {...actionsData}
+    />
   );
 };
 
@@ -50,33 +48,17 @@ export const Empty = () => {
 };
 
 export const Filled = () => (
-  <SudokuCell
-    {...cellData}
-    value={number("Value", 1)}
-    {...actionsData}
-  ></SudokuCell>
+  <SudokuCell {...cellData} value={number("Value", 1)} {...actionsData} />
 );
 
 export const OuterCorner = () => {
-  return (
-    <div>
-      <SudokuCell {...cellData} row={0} col={0} {...actionsData} />
-    </div>
-  );
+  return <SudokuCell {...cellData} row={0} col={0} {...actionsData} />;
 };
 
 export const InnerCorner = () => {
-  return (
-    <div>
-      <SudokuCell {...cellData} row={2} col={2} {...actionsData} />
-    </div>
-  );
+  return <SudokuCell {...cellData} row={2} col={2} {...actionsData} />;
 };
 
 export const Selected = () => {
-  return (
-    <div>
-      <SudokuCell {...cellData} selected={true} {...actionsData} />
-    </div>
-  );
+  return <SudokuCell {...cellData} selected={true} {...actionsData} />;
 };
