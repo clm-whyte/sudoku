@@ -3,6 +3,8 @@ import { action } from "@storybook/addon-actions";
 import { withKnobs, number } from "@storybook/addon-knobs/react";
 import { withA11y } from "@storybook/addon-a11y";
 
+import mdx from "./SudokuCell.mdx";
+
 import SudokuCell from "./SudokuCell";
 
 export default {
@@ -10,6 +12,11 @@ export default {
   title: "Cell",
   decorators: [withKnobs, withA11y],
   excludeStories: /.*Data$/,
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+  },
 };
 
 export const cellData = {
