@@ -1,7 +1,6 @@
 import React from "react";
 import { action } from "@storybook/addon-actions";
-import { withKnobs, number } from "@storybook/addon-knobs";
-import { withA11y } from "@storybook/addon-a11y";
+import { number, boolean } from "@storybook/addon-knobs";
 
 import mdx from "./SudokuCell.mdx";
 
@@ -10,7 +9,6 @@ import SudokuCell from "./SudokuCell";
 export default {
   component: SudokuCell,
   title: "Cell",
-  decorators: [withKnobs, withA11y],
   excludeStories: /.*Data$/,
   parameters: {
     docs: {
@@ -21,7 +19,7 @@ export default {
 
 export const cellData = {
   cellID: 1,
-  value: 1,
+  value: null,
   row: 1,
   col: 1,
   className: "cell",
@@ -32,16 +30,29 @@ export const actionsData = {
   onClick: action("onClick"),
 };
 
-export const Empty = () => {
-  return <SudokuCell {...cellData} value={null} {...actionsData} />;
+export const Cell = () => {
+  return (
+    <div>
+      <SudokuCell
+        {...cellData}
+        value={number("Value", null)}
+        row={number("Row", 1)}
+        col={number("Column", 1)}
+        selected={boolean("Selected", false)}
+        {...actionsData}
+      />
+    </div>
+  );
 };
 
-export const ElementFilled = () => (
+export const Empty = () => {
+  return <SudokuCell {...cellData} {...actionsData} />;
+};
+
+export const Filled = () => (
   <SudokuCell
     {...cellData}
     value={number("Value", 1)}
-    row={number("Row", 1)}
-    col={number("Column", 1)}
     {...actionsData}
   ></SudokuCell>
 );
