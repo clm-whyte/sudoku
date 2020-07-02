@@ -40,9 +40,9 @@ ${props.row % 3 === 2 ? "boxBoundaryBottom" : ""}
 ```
 
 <Preview>
-  <Story id="cell--empty"></Story>
-  <Story id="cell--outer-corner"></Story>
-  <Story id="cell--inner-corner"></Story>
+  <Story id="cell--empty" />
+  <Story id="cell--outer-corner" />
+  <Story id="cell--inner-corner" />
 </Preview>
 
 ## Selection
@@ -53,8 +53,8 @@ An unselected cell has a white background and may or may not be filled with a va
 On click, any currently selected cells are deselected, and the clicked cell becomes the only selected cell, as shown by the pink background colour.
 
 <Preview>
-  <Story id="cell--empty"></Story>
-  <Story id="cell--selected"></Story>
+  <Story id="cell--empty" />
+  <Story id="cell--selected" />
 </Preview>
 
 ## Value
@@ -63,6 +63,6 @@ The value of a cell is displayed in the centre. Currently, a value is applied wh
 That is to say, all cells default to a value of `null`. When clicked, the cell's value is set to the cell's ID, it's position in the grid.
 
 <Preview>
-  <Story id="cell--empty"></Story>
-  <Story id="cell--filled"></Story>
+  <Story id="cell--empty" />
+  <Story id="cell--filled" />
 </Preview>
