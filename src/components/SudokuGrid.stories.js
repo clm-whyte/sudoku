@@ -1,7 +1,9 @@
 import React from "react";
 import { action } from "@storybook/addon-actions";
-import { withKnobs } from "@storybook/addon-knobs/react";
+import { withKnobs } from "@storybook/addon-knobs";
 import { withA11y } from "@storybook/addon-a11y";
+
+import mdx from "./SudokuGrid.mdx";
 
 import SudokuGrid from "./SudokuGrid";
 
@@ -10,6 +12,11 @@ export default {
   title: "Grid",
   decorators: [withKnobs, withA11y],
   excludeStories: /.*Data$/,
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+  },
 };
 
 export const gridData = {
