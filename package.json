@@ -6,7 +6,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "coverage": "jest -- --coverage --watchAll=false",
+    "coverage": "npm test -- --coverage --watchAll=false --testPathIgnorePatterns=src/storybook.test.js",
     "eject": "react-scripts eject",
     "lint": "prettier --write . && eslint --quiet --fix .",
     "storybook": "start-storybook -p 9009 -s public",
@@ -94,15 +94,15 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/**/*.{js,jsx,ts,tsx}",
+      "src/**/*.{js,jsx}",
       "!<rootDir>/node_modules/",
       "!src/serviceWorker.js",
       "!src/index.js"
     ],
-    "transform": {
-      "^.+\\.[tj]sx?$": "babel-jest",
-      "^.+\\.mdx$": "@storybook/addon-docs/jest-transform-mdx"
-    }
+    "coveragePathIgnorePatterns": [
+      "src/storybook.test.js",
+      "src/components/.*/*.stories.js"
+    ]
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
