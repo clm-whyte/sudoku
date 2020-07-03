@@ -28,3 +28,11 @@ describe("Cell borders", () => {
     cell.unmount();
   });
 });
+
+describe("Cell selection", () => {
+  it("asserts asserts that when passed the prop 'selected=true', the rendered html contains the class 'selected'", () => {
+    const cell = shallow(<SudokuCell selected="true" />);
+    expect(cell.html()).toContain("selected");
+    cell.unmount();
+  });
+});
