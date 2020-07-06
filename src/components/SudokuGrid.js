@@ -31,8 +31,10 @@ class SudokuGrid extends React.Component {
     this.setState({ cursorLocation });
   }
 
-  handleClick(row, col) {
-    this.deselectAllCells();
+  handleClick(row, col, e) {
+    if (!e.ctrlKey) {
+      this.deselectAllCells();
+    }
     this.moveCursor(row, col);
     const cells = this.state.cells.slice();
     cells[row][col] = {
@@ -56,7 +58,7 @@ class SudokuGrid extends React.Component {
         }
         key={this.state.cells[row].length * row + col}
         cellID={`cell-${row}/${col}`}
-        onClick={() => this.handleClick(row, col)}
+        onClick={(e) => this.handleClick(row, col, e)}
         row={row}
         col={col}
       />
