@@ -14,7 +14,7 @@ function emptyGrid() {
 }
 
 describe("Clicking on the grid", () => {
-  it("clicks on multiple cells on the same row one after the other, verifying clicked cells are numbered and only the last cell is highlighted", () => {
+  it("clicks on multiple cells on the same row one after the other", () => {
     const gridBefore = emptyGrid();
     const gridAfter = gridBefore.slice();
     gridAfter[0] = [
@@ -43,5 +43,47 @@ describe("Clicking on the grid", () => {
     cell8.simulate("click");
 
     expect(sudokuGrid.state().cells).toEqual(gridAfter);
+    sudokuGrid.unmount();
+  });
+
+  it("clicks on a cell and then CTRL + Clicks two more", () => {
+    const gridBefore = emptyGrid();
+    const gridAfter = gridBefore.slice();
+    gridAfter[0] = [
+      { value: 0, selected: true },
+      { value: null, selected: false },
+      { value: null, selected: false },
+      { value: null, selected: false },
+      { value: null, selected: false },
+      { value: null, selected: false },
+      { value: null, selected: false },
+      { value: null, selected: false },
+      { value: 8, selected: true },
+    ];
+    gridAfter[8] = [
+      { value: 0, selected: true },
+      { value: null, selected: false },
+      { value: null, selected: false },
+      { value: null, selected: false },
+      { value: null, selected: false },
+      { value: null, selected: false },
+      { value: null, selected: false },
+      { value: null, selected: false },
+      { value: null, selected: false },
+    ];
+
+    const sudokuGrid = shallow(<SudokuGrid state={gridBefore} />);
+    const cell0 = sudokuGrid.find(SudokuCell).at(0);
+    const cell8 = sudokuGrid.find(SudokuCell).at(8);
+    const cell72 = sudokuGrid.find(SudokuCell).at(72);
+
+    expect(sudokuGrid.state().cells).toEqual(gridBefore);
+
+    cell0.simulate("click");
+    cell8.simulate("click", { ctrlKey: true });
+    cell72.simulate("click", { ctrlKey: true });
+
+    expect(sudokuGrid.state().cells).toEqual(gridAfter);
+    sudokuGrid.unmount();
   });
 });
