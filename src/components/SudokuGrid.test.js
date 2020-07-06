@@ -1,6 +1,6 @@
 /// <reference types="jest" />
 import React from "react";
-import { shallow } from "enzyme";
+import { mount } from "enzyme";
 import SudokuGrid from "./SudokuGrid";
 import SudokuCell from "./SudokuCell";
 
@@ -29,7 +29,7 @@ describe("Clicking on the grid", () => {
       { value: 8, selected: true, cursor: true },
     ];
 
-    const sudokuGrid = shallow(<SudokuGrid state={gridBefore} />);
+    const sudokuGrid = mount(<SudokuGrid state={gridBefore} />);
     const cell0 = sudokuGrid.find(SudokuCell).at(0);
     const cell1 = sudokuGrid.find(SudokuCell).at(1);
     const cell2 = sudokuGrid.find(SudokuCell).at(2);
@@ -61,7 +61,7 @@ describe("Clicking on the grid", () => {
       { value: 8, selected: true },
     ];
     gridAfter[8] = [
-      { value: 0, selected: true },
+      { value: 72, selected: true },
       { value: null, selected: false },
       { value: null, selected: false },
       { value: null, selected: false },
@@ -72,7 +72,7 @@ describe("Clicking on the grid", () => {
       { value: null, selected: false },
     ];
 
-    const sudokuGrid = shallow(<SudokuGrid state={gridBefore} />);
+    const sudokuGrid = mount(<SudokuGrid state={gridBefore} />);
     const cell0 = sudokuGrid.find(SudokuCell).at(0);
     const cell8 = sudokuGrid.find(SudokuCell).at(8);
     const cell72 = sudokuGrid.find(SudokuCell).at(72);

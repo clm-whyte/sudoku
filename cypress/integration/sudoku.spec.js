@@ -44,7 +44,7 @@ describe("Sudoku E2E Tests", () => {
   });
 
   it("clicks one cell, and then CTRL + Clicks two more cells", () => {
-    cy.get('[data-test="cell-0/0"]').click();
+    cy.get('[data-test="cell-0/0"]').click().type("{ctrl}", { release: false });
     cy.get('[data-test="cell-0/8"]').type("{ctrl}", { release: false }).click();
     cy.get('[data-test="cell-8/0"]').type("{ctrl}", { release: false }).click();
     cy.get(".sudokuCell").should("have.text", "0872");
