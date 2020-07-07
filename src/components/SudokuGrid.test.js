@@ -86,4 +86,48 @@ describe("Clicking on the grid", () => {
     expect(sudokuGrid.state().cells).toEqual(gridAfter);
     sudokuGrid.unmount();
   });
+
+  it("clicks on a cell and then SHIFT + Clicks two more on the same row", () => {
+    const gridBefore = emptyGrid();
+    const gridZeroToFour = gridBefore.slice();
+    gridZeroToFour[0] = [
+      { value: 0, selected: true },
+      { value: null, selected: true },
+      { value: null, selected: true },
+      { value: null, selected: true },
+      { value: 4, selected: true },
+      { value: null, selected: false },
+      { value: null, selected: false },
+      { value: null, selected: false },
+      { value: null, selected: false },
+    ];
+    const gridZeroToEight = gridBefore.slice();
+    gridZeroToEight[0] = [
+      { value: 0, selected: true },
+      { value: null, selected: true },
+      { value: null, selected: true },
+      { value: null, selected: true },
+      { value: 4, selected: true },
+      { value: null, selected: true },
+      { value: null, selected: true },
+      { value: null, selected: true },
+      { value: 8, selected: true },
+    ];
+
+    const sudokuGrid = mount(<SudokuGrid state={gridBefore} />);
+    const cell0 = sudokuGrid.find(SudokuCell).at(0);
+    const cell4 = sudokuGrid.find(SudokuCell).at(4);
+    const cell8 = sudokuGrid.find(SudokuCell).at(8);
+
+    expect(sudokuGrid.state().cells).toEqual(gridBefore);
+
+    cell0.simulate("click");
+    cell4.simulate("click", { shiftKey: true });
+    expect(sudokuGrid.state().cells).toEqual(gridZeroToFour);
+
+    cell8.simulate("click", { shiftKey: true });
+    expect(sudokuGrid.state().cells).toEqual(gridZeroToEight);
+
+    sudokuGrid.unmount();
+  });
 });
