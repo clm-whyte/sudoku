@@ -12,8 +12,9 @@ import SudokuCell from "./components/SudokuCell";
 function emptyGrid() {
   const grid = [];
   for (let i = 0; i < 9; i++) {
-    grid.push(Array(9).fill({ value: null, selected: false }));
+    grid.push(Array(9).fill({ value: null, selected: false, cursor: false }));
   }
+  grid[0][0] = { value: null, selected: false, cursor: true };
   return grid;
 }
 
@@ -42,15 +43,15 @@ test("after clicking multiple cells on the same row one after the other, clicked
   const gridBefore = emptyGrid();
   const gridAfter = gridBefore.slice();
   gridAfter[0] = [
-    { value: 0, selected: false },
-    { value: 1, selected: false },
-    { value: 2, selected: false },
-    { value: null, selected: false },
-    { value: null, selected: false },
-    { value: null, selected: false },
-    { value: null, selected: false },
-    { value: null, selected: false },
-    { value: 8, selected: true },
+    { value: 0, selected: false, cursor: false },
+    { value: 1, selected: false, cursor: false },
+    { value: 2, selected: false, cursor: false },
+    { value: null, selected: false, cursor: false },
+    { value: null, selected: false, cursor: false },
+    { value: null, selected: false, cursor: false },
+    { value: null, selected: false, cursor: false },
+    { value: null, selected: false, cursor: false },
+    { value: 8, selected: true, cursor: true },
   ];
 
   const sudokuGrid = shallow(<SudokuGrid state={gridBefore} />);

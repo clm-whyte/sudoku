@@ -13,6 +13,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-0/0"
       col={0}
+      cursor={true}
       key="0"
       onClick={[Function]}
       row={0}
@@ -22,6 +23,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-0/1"
       col={1}
+      cursor={false}
       key="1"
       onClick={[Function]}
       row={0}
@@ -31,6 +33,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-0/2"
       col={2}
+      cursor={false}
       key="2"
       onClick={[Function]}
       row={0}
@@ -40,6 +43,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-0/3"
       col={3}
+      cursor={false}
       key="3"
       onClick={[Function]}
       row={0}
@@ -49,6 +53,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-0/4"
       col={4}
+      cursor={false}
       key="4"
       onClick={[Function]}
       row={0}
@@ -58,6 +63,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-0/5"
       col={5}
+      cursor={false}
       key="5"
       onClick={[Function]}
       row={0}
@@ -67,6 +73,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-0/6"
       col={6}
+      cursor={false}
       key="6"
       onClick={[Function]}
       row={0}
@@ -76,6 +83,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-0/7"
       col={7}
+      cursor={false}
       key="7"
       onClick={[Function]}
       row={0}
@@ -85,6 +93,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-0/8"
       col={8}
+      cursor={false}
       key="8"
       onClick={[Function]}
       row={0}
@@ -100,6 +109,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-1/0"
       col={0}
+      cursor={false}
       key="9"
       onClick={[Function]}
       row={1}
@@ -109,6 +119,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-1/1"
       col={1}
+      cursor={false}
       key="10"
       onClick={[Function]}
       row={1}
@@ -118,6 +129,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-1/2"
       col={2}
+      cursor={false}
       key="11"
       onClick={[Function]}
       row={1}
@@ -127,6 +139,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-1/3"
       col={3}
+      cursor={false}
       key="12"
       onClick={[Function]}
       row={1}
@@ -136,6 +149,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-1/4"
       col={4}
+      cursor={false}
       key="13"
       onClick={[Function]}
       row={1}
@@ -145,6 +159,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-1/5"
       col={5}
+      cursor={false}
       key="14"
       onClick={[Function]}
       row={1}
@@ -154,6 +169,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-1/6"
       col={6}
+      cursor={false}
       key="15"
       onClick={[Function]}
       row={1}
@@ -163,6 +179,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-1/7"
       col={7}
+      cursor={false}
       key="16"
       onClick={[Function]}
       row={1}
@@ -172,6 +189,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-1/8"
       col={8}
+      cursor={false}
       key="17"
       onClick={[Function]}
       row={1}
@@ -187,6 +205,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-2/0"
       col={0}
+      cursor={false}
       key="18"
       onClick={[Function]}
       row={2}
@@ -196,6 +215,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-2/1"
       col={1}
+      cursor={false}
       key="19"
       onClick={[Function]}
       row={2}
@@ -205,6 +225,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-2/2"
       col={2}
+      cursor={false}
       key="20"
       onClick={[Function]}
       row={2}
@@ -214,6 +235,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-2/3"
       col={3}
+      cursor={false}
       key="21"
       onClick={[Function]}
       row={2}
@@ -223,6 +245,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-2/4"
       col={4}
+      cursor={false}
       key="22"
       onClick={[Function]}
       row={2}
@@ -232,6 +255,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-2/5"
       col={5}
+      cursor={false}
       key="23"
       onClick={[Function]}
       row={2}
@@ -241,6 +265,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-2/6"
       col={6}
+      cursor={false}
       key="24"
       onClick={[Function]}
       row={2}
@@ -250,6 +275,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-2/7"
       col={7}
+      cursor={false}
       key="25"
       onClick={[Function]}
       row={2}
@@ -259,6 +285,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-2/8"
       col={8}
+      cursor={false}
       key="26"
       onClick={[Function]}
       row={2}
@@ -274,6 +301,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-3/0"
       col={0}
+      cursor={false}
       key="27"
       onClick={[Function]}
       row={3}
@@ -283,6 +311,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-3/1"
       col={1}
+      cursor={false}
       key="28"
       onClick={[Function]}
       row={3}
@@ -292,6 +321,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-3/2"
       col={2}
+      cursor={false}
       key="29"
       onClick={[Function]}
       row={3}
@@ -301,6 +331,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-3/3"
       col={3}
+      cursor={false}
       key="30"
       onClick={[Function]}
       row={3}
@@ -310,6 +341,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-3/4"
       col={4}
+      cursor={false}
       key="31"
       onClick={[Function]}
       row={3}
@@ -319,6 +351,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-3/5"
       col={5}
+      cursor={false}
       key="32"
       onClick={[Function]}
       row={3}
@@ -328,6 +361,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-3/6"
       col={6}
+      cursor={false}
       key="33"
       onClick={[Function]}
       row={3}
@@ -337,6 +371,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-3/7"
       col={7}
+      cursor={false}
       key="34"
       onClick={[Function]}
       row={3}
@@ -346,6 +381,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-3/8"
       col={8}
+      cursor={false}
       key="35"
       onClick={[Function]}
       row={3}
@@ -361,6 +397,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-4/0"
       col={0}
+      cursor={false}
       key="36"
       onClick={[Function]}
       row={4}
@@ -370,6 +407,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-4/1"
       col={1}
+      cursor={false}
       key="37"
       onClick={[Function]}
       row={4}
@@ -379,6 +417,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-4/2"
       col={2}
+      cursor={false}
       key="38"
       onClick={[Function]}
       row={4}
@@ -388,6 +427,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-4/3"
       col={3}
+      cursor={false}
       key="39"
       onClick={[Function]}
       row={4}
@@ -397,6 +437,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-4/4"
       col={4}
+      cursor={false}
       key="40"
       onClick={[Function]}
       row={4}
@@ -406,6 +447,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-4/5"
       col={5}
+      cursor={false}
       key="41"
       onClick={[Function]}
       row={4}
@@ -415,6 +457,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-4/6"
       col={6}
+      cursor={false}
       key="42"
       onClick={[Function]}
       row={4}
@@ -424,6 +467,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-4/7"
       col={7}
+      cursor={false}
       key="43"
       onClick={[Function]}
       row={4}
@@ -433,6 +477,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-4/8"
       col={8}
+      cursor={false}
       key="44"
       onClick={[Function]}
       row={4}
@@ -448,6 +493,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-5/0"
       col={0}
+      cursor={false}
       key="45"
       onClick={[Function]}
       row={5}
@@ -457,6 +503,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-5/1"
       col={1}
+      cursor={false}
       key="46"
       onClick={[Function]}
       row={5}
@@ -466,6 +513,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-5/2"
       col={2}
+      cursor={false}
       key="47"
       onClick={[Function]}
       row={5}
@@ -475,6 +523,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-5/3"
       col={3}
+      cursor={false}
       key="48"
       onClick={[Function]}
       row={5}
@@ -484,6 +533,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-5/4"
       col={4}
+      cursor={false}
       key="49"
       onClick={[Function]}
       row={5}
@@ -493,6 +543,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-5/5"
       col={5}
+      cursor={false}
       key="50"
       onClick={[Function]}
       row={5}
@@ -502,6 +553,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-5/6"
       col={6}
+      cursor={false}
       key="51"
       onClick={[Function]}
       row={5}
@@ -511,6 +563,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-5/7"
       col={7}
+      cursor={false}
       key="52"
       onClick={[Function]}
       row={5}
@@ -520,6 +573,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-5/8"
       col={8}
+      cursor={false}
       key="53"
       onClick={[Function]}
       row={5}
@@ -535,6 +589,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-6/0"
       col={0}
+      cursor={false}
       key="54"
       onClick={[Function]}
       row={6}
@@ -544,6 +599,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-6/1"
       col={1}
+      cursor={false}
       key="55"
       onClick={[Function]}
       row={6}
@@ -553,6 +609,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-6/2"
       col={2}
+      cursor={false}
       key="56"
       onClick={[Function]}
       row={6}
@@ -562,6 +619,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-6/3"
       col={3}
+      cursor={false}
       key="57"
       onClick={[Function]}
       row={6}
@@ -571,6 +629,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-6/4"
       col={4}
+      cursor={false}
       key="58"
       onClick={[Function]}
       row={6}
@@ -580,6 +639,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-6/5"
       col={5}
+      cursor={false}
       key="59"
       onClick={[Function]}
       row={6}
@@ -589,6 +649,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-6/6"
       col={6}
+      cursor={false}
       key="60"
       onClick={[Function]}
       row={6}
@@ -598,6 +659,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-6/7"
       col={7}
+      cursor={false}
       key="61"
       onClick={[Function]}
       row={6}
@@ -607,6 +669,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-6/8"
       col={8}
+      cursor={false}
       key="62"
       onClick={[Function]}
       row={6}
@@ -622,6 +685,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-7/0"
       col={0}
+      cursor={false}
       key="63"
       onClick={[Function]}
       row={7}
@@ -631,6 +695,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-7/1"
       col={1}
+      cursor={false}
       key="64"
       onClick={[Function]}
       row={7}
@@ -640,6 +705,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-7/2"
       col={2}
+      cursor={false}
       key="65"
       onClick={[Function]}
       row={7}
@@ -649,6 +715,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-7/3"
       col={3}
+      cursor={false}
       key="66"
       onClick={[Function]}
       row={7}
@@ -658,6 +725,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-7/4"
       col={4}
+      cursor={false}
       key="67"
       onClick={[Function]}
       row={7}
@@ -667,6 +735,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-7/5"
       col={5}
+      cursor={false}
       key="68"
       onClick={[Function]}
       row={7}
@@ -676,6 +745,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-7/6"
       col={6}
+      cursor={false}
       key="69"
       onClick={[Function]}
       row={7}
@@ -685,6 +755,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-7/7"
       col={7}
+      cursor={false}
       key="70"
       onClick={[Function]}
       row={7}
@@ -694,6 +765,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-7/8"
       col={8}
+      cursor={false}
       key="71"
       onClick={[Function]}
       row={7}
@@ -709,6 +781,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-8/0"
       col={0}
+      cursor={false}
       key="72"
       onClick={[Function]}
       row={8}
@@ -718,6 +791,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-8/1"
       col={1}
+      cursor={false}
       key="73"
       onClick={[Function]}
       row={8}
@@ -727,6 +801,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-8/2"
       col={2}
+      cursor={false}
       key="74"
       onClick={[Function]}
       row={8}
@@ -736,6 +811,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-8/3"
       col={3}
+      cursor={false}
       key="75"
       onClick={[Function]}
       row={8}
@@ -745,6 +821,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-8/4"
       col={4}
+      cursor={false}
       key="76"
       onClick={[Function]}
       row={8}
@@ -754,6 +831,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-8/5"
       col={5}
+      cursor={false}
       key="77"
       onClick={[Function]}
       row={8}
@@ -763,6 +841,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-8/6"
       col={6}
+      cursor={false}
       key="78"
       onClick={[Function]}
       row={8}
@@ -772,6 +851,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-8/7"
       col={7}
+      cursor={false}
       key="79"
       onClick={[Function]}
       row={8}
@@ -781,6 +861,7 @@ exports[`test shallow render of Sudoku Grid 1`] = `
     <SudokuCell
       cellID="cell-8/8"
       col={8}
+      cursor={false}
       key="80"
       onClick={[Function]}
       row={8}
