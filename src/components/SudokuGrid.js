@@ -9,6 +9,7 @@ class SudokuGrid extends React.Component {
     for (let i = 0; i < 9; i++) {
       grid.push(Array(9).fill({ value: null, selected: false, cursor: false }));
     }
+    grid[0][0] = { value: null, selected: false, cursor: true };
     this.state = { cells: grid };
   }
 
