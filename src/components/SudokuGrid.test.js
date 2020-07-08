@@ -50,26 +50,26 @@ describe("Clicking on the grid", () => {
     const gridBefore = emptyGrid();
     const gridAfter = gridBefore.slice();
     gridAfter[0] = [
-      { value: 0, selected: true },
-      { value: null, selected: false },
-      { value: null, selected: false },
-      { value: null, selected: false },
-      { value: null, selected: false },
-      { value: null, selected: false },
-      { value: null, selected: false },
-      { value: null, selected: false },
-      { value: 8, selected: true },
+      { value: 0, selected: true, cursor: false },
+      { value: null, selected: false, cursor: false },
+      { value: null, selected: false, cursor: false },
+      { value: null, selected: false, cursor: false },
+      { value: null, selected: false, cursor: false },
+      { value: null, selected: false, cursor: false },
+      { value: null, selected: false, cursor: false },
+      { value: null, selected: false, cursor: false },
+      { value: 8, selected: true, cursor: false },
     ];
     gridAfter[8] = [
-      { value: 72, selected: true },
-      { value: null, selected: false },
-      { value: null, selected: false },
-      { value: null, selected: false },
-      { value: null, selected: false },
-      { value: null, selected: false },
-      { value: null, selected: false },
-      { value: null, selected: false },
-      { value: null, selected: false },
+      { value: 72, selected: true, cursor: true },
+      { value: null, selected: false, cursor: false },
+      { value: null, selected: false, cursor: false },
+      { value: null, selected: false, cursor: false },
+      { value: null, selected: false, cursor: false },
+      { value: null, selected: false, cursor: false },
+      { value: null, selected: false, cursor: false },
+      { value: null, selected: false, cursor: false },
+      { value: null, selected: false, cursor: false },
     ];
 
     const sudokuGrid = mount(<SudokuGrid state={gridBefore} />);
@@ -91,27 +91,27 @@ describe("Clicking on the grid", () => {
     const gridBefore = emptyGrid();
     const gridZeroToFour = gridBefore.slice();
     gridZeroToFour[0] = [
-      { value: 0, selected: true },
-      { value: null, selected: true },
-      { value: null, selected: true },
-      { value: null, selected: true },
-      { value: 4, selected: true },
-      { value: null, selected: false },
-      { value: null, selected: false },
-      { value: null, selected: false },
-      { value: null, selected: false },
+      { value: 0, selected: true, cursor: true },
+      { value: null, selected: true, cursor: false },
+      { value: null, selected: true, cursor: false },
+      { value: null, selected: true, cursor: false },
+      { value: 4, selected: true, cursor: false },
+      { value: null, selected: false, cursor: false },
+      { value: null, selected: false, cursor: false },
+      { value: null, selected: false, cursor: false },
+      { value: null, selected: false, cursor: false },
     ];
     const gridZeroToEight = gridBefore.slice();
     gridZeroToEight[0] = [
-      { value: 0, selected: true },
-      { value: null, selected: true },
-      { value: null, selected: true },
-      { value: null, selected: true },
-      { value: 4, selected: true },
-      { value: null, selected: true },
-      { value: null, selected: true },
-      { value: null, selected: true },
-      { value: 8, selected: true },
+      { value: 0, selected: true, cursor: true },
+      { value: null, selected: true, cursor: false },
+      { value: null, selected: true, cursor: false },
+      { value: null, selected: true, cursor: false },
+      { value: 4, selected: true, cursor: false },
+      { value: null, selected: true, cursor: false },
+      { value: null, selected: true, cursor: false },
+      { value: null, selected: true, cursor: false },
+      { value: 8, selected: true, cursor: false },
     ];
 
     const sudokuGrid = mount(<SudokuGrid state={gridBefore} />);
