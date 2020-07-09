@@ -24,8 +24,16 @@ class SudokuGrid extends React.Component {
     this.setState({ cells });
   }
 
+  moveCursor(newRow, newCol) {
+    const cursorLocation = this.state.cursorLocation;
+    cursorLocation.row = newRow;
+    cursorLocation.col = newCol;
+    this.setState({ cursorLocation });
+  }
+
   handleClick(row, col) {
     this.deselectAllCells();
+    this.moveCursor(row, col);
     const cells = this.state.cells.slice();
     cells[row][col] = {
       value: cells[row].length * row + col,
