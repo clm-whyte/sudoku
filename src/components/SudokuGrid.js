@@ -23,17 +23,6 @@ class SudokuGrid extends React.Component {
     this.setState({ cells });
   }
 
-  moveCursor() {
-    const cells = this.state.cells.slice();
-    for (let i = 0; i < 9; i++) {
-      cells[i] = cells[i].map((cell) => {
-        cell.cursor = false;
-        return cell;
-      });
-    }
-    this.setState({ cells });
-  }
-
   moveCursor(newRow, newCol) {
     const cursorLocation = this.state.cursorLocation;
     cursorLocation.row = newRow;
