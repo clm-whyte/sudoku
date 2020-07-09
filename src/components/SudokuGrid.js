@@ -9,8 +9,7 @@ class SudokuGrid extends React.Component {
     for (let i = 0; i < 9; i++) {
       grid.push(Array(9).fill({ value: null, selected: false, cursor: false }));
     }
-    grid[0][0] = { value: null, selected: false, cursor: true };
-    this.state = { cells: grid };
+    this.state = { cells: grid, cursorLocation: { row: 0, col: 0 } };
   }
 
   deselectAllCells() {
@@ -41,7 +40,12 @@ class SudokuGrid extends React.Component {
       <SudokuCell
         value={this.state.cells[row][col].value}
         selected={this.state.cells[row][col].selected}
-        cursor={this.state.cells[row][col].cursor}
+        cursor={
+          row === this.state.cursorLocation.row &&
+          col === this.state.cursorLocation.col
+            ? true
+            : false
+        }
         key={this.state.cells[row].length * row + col}
         cellID={`cell-${row}/${col}`}
         onClick={() => this.handleClick(row, col)}
