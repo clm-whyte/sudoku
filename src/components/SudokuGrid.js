@@ -56,8 +56,20 @@ class SudokuGrid extends React.Component {
     const clickCol = col;
 
     if (cursorRow === clickRow) {
-      for (let i = cursorCol; i <= clickCol; i++) {
-        cells[cursorRow][i] = { value: cells[row][col].value, selected: true };
+      if (clickCol > cursorCol) {
+        for (let i = cursorCol; i <= clickCol; i++) {
+          cells[cursorRow][i] = {
+            value: cells[row][col].value,
+            selected: true,
+          };
+        }
+      } else {
+        for (let i = clickCol; i <= cursorCol; i++) {
+          cells[cursorRow][i] = {
+            value: cells[row][col].value,
+            selected: true,
+          };
+        }
       }
     }
     this.setState({ cells });
