@@ -89,7 +89,7 @@ describe("Clicking on the grid", () => {
     sudokuGrid.unmount();
   });
 
-  it("clicks on a cell and then SHIFT + Clicks two more on the same row", () => {
+  it("clicks on a cell and then SHIFT + Clicks two subsequent cells on the same row", () => {
     const gridZeroToFour = emptyGrid();
     gridZeroToFour[0] = [
       { value: null, selected: true },
@@ -132,6 +132,54 @@ describe("Clicking on the grid", () => {
     cell8.simulate("click", { shiftKey: true });
 
     expect(sudokuGrid.state().cells).toEqual(gridZeroToEight);
+    expect(sudokuGrid.state().cursorLocation).toEqual({ row: 0, col: 0 });
+
+    sudokuGrid.unmount();
+  });
+
+  it("clicks on the end cell and then SHIFT + Clicks two previous cells on the same row", () => {
+    const gridEightToFour = emptyGrid();
+    gridEightToFour[0] = [
+      { value: null, selected: false },
+      { value: null, selected: false },
+      { value: null, selected: false },
+      { value: null, selected: false },
+      { value: null, selected: true },
+      { value: null, selected: true },
+      { value: null, selected: true },
+      { value: null, selected: true },
+      { value: null, selected: true },
+    ];
+    const gridEightToZero = emptyGrid();
+    gridEightToZero[0] = [
+      { value: null, selected: true },
+      { value: null, selected: true },
+      { value: null, selected: true },
+      { value: null, selected: true },
+      { value: null, selected: true },
+      { value: null, selected: true },
+      { value: null, selected: true },
+      { value: null, selected: true },
+      { value: null, selected: true },
+    ];
+
+    const sudokuGrid = mount(<SudokuGrid />);
+    const cell0 = sudokuGrid.find(SudokuCell).at(0);
+    const cell4 = sudokuGrid.find(SudokuCell).at(4);
+    const cell8 = sudokuGrid.find(SudokuCell).at(8);
+
+    expect(sudokuGrid.state().cells).toEqual(emptyGrid());
+    expect(sudokuGrid.state().cursorLocation).toEqual({ row: 0, col: 0 });
+
+    cell8.simulate("click");
+    cell4.simulate("click", { shiftKey: true });
+
+    expect(sudokuGrid.state().cells).toEqual(gridEightToFour);
+    expect(sudokuGrid.state().cursorLocation).toEqual({ row: 0, col: 0 });
+
+    cell0.simulate("click", { shiftKey: true });
+
+    expect(sudokuGrid.state().cells).toEqual(gridEightToZero);
     expect(sudokuGrid.state().cursorLocation).toEqual({ row: 0, col: 0 });
 
     sudokuGrid.unmount();
