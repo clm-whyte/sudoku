@@ -3,6 +3,7 @@ $cellSize: 34px;
 $cellBorder: 1px solid rgba(0, 0, 0, 0.23);
 $boxBorder: 1px solid black;
 $selectedColor: lightGrey;
+$cursorBorder: 1px dashed darkBlue;
 
 .sudokuCell {
   max-width: 34px;
@@ -28,6 +29,9 @@ $selectedColor: lightGrey;
 }
 .selected {
   background-color: pink;
+}
+.cursor {
+  border: $cursorBorder;
 }
 
 // Grid

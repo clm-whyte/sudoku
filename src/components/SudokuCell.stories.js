@@ -22,7 +22,7 @@ export const cellData = {
   value: null,
   row: 1,
   col: 1,
-  className: "cell",
+  className: "sudokuCell",
   selected: false,
 };
 

@@ -9,13 +9,13 @@ class SudokuGrid extends React.Component {
     for (let i = 0; i < 9; i++) {
       grid.push(Array(9).fill({ value: null, selected: false }));
     }
-    this.state = { cells: grid };
+    this.state = { cells: grid, cursorLocation: { row: 0, col: 0 } };
   }
 
   deselectAllCells() {
     const cells = this.state.cells.slice();
     for (let i = 0; i < 9; i++) {
-      cells[i] = cells[i].map((cell, index) => {
+      cells[i] = cells[i].map((cell) => {
         cell.selected = false;
         return cell;
       });
@@ -23,11 +23,40 @@ class SudokuGrid extends React.Component {
     this.setState({ cells });
   }
 
-  handleClick(row, col) {
-    this.deselectAllCells();
+  moveCursor(newRow, newCol) {
+    const cursorLocation = this.state.cursorLocation;
+    cursorLocation.row = newRow;
+    cursorLocation.col = newCol;
+    this.setState({ cursorLocation });
+  }
+
+  setValue(row, col) {
     const cells = this.state.cells.slice();
-    cells[row][col] = { value: cells[row].length * row + col, selected: true };
+    cells[row][col] = {
+      value: cells[row].length * row + col,
+      selected: cells[row][col].selected,
+    };
     this.setState({ cells });
+  }
+
+  selectCell(row, col) {
+    const cells = this.state.cells.slice();
+    cells[row][col] = {
+      value: cells[row][col].value,
+      selected: true,
+    };
+    this.setState({ cells });
+  }
+
+  handleClick(row, col, e) {
+    if (!e.ctrlKey) {
+      this.deselectAllCells();
+    }
+    if (!e.shiftKey) {
+      this.moveCursor(row, col);
+    }
+    this.setValue(row, col);
+    this.selectCell(row, col);
   }
 
   renderCell(row, col) {
@@ -35,9 +64,15 @@ class SudokuGrid extends React.Component {
       <SudokuCell
         value={this.state.cells[row][col].value}
         selected={this.state.cells[row][col].selected}
+        cursor={
+          row === this.state.cursorLocation.row &&
+          col === this.state.cursorLocation.col
+            ? true
+            : false
+        }
         key={this.state.cells[row].length * row + col}
         cellID={`cell-${row}/${col}`}
-        onClick={() => this.handleClick(row, col)}
+        onClick={(e) => this.handleClick(row, col, e)}
         row={row}
         col={col}
       />

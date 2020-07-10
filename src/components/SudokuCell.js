@@ -16,6 +16,7 @@ export default function SudokuCell(props) {
         ${props.col % 3 === 0 ? "boxBoundaryLeft" : ""}
         ${props.row % 3 === 0 ? "boxBoundaryTop" : ""}
         ${props.selected ? "selected" : ""}
+        ${props.cursor ? "cursor" : ""}
         `}
       >
         {props.value}
