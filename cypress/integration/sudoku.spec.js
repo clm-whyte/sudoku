@@ -22,7 +22,6 @@ describe("Sudoku E2E Tests", () => {
 
   it("clicks the first cell", () => {
     cy.get('[data-test="cell-0/0"]').click();
-    cy.get('[data-test="cell-0/0"]').should("have.text", 0);
     cy.get('[data-test="cell-0/0"]').should("have.class", "selected");
     cy.checkA11y();
   });
@@ -37,8 +36,6 @@ describe("Sudoku E2E Tests", () => {
     cy.get('[data-test="cell-6/6"]').click();
     cy.get('[data-test="cell-7/7"]').click();
     cy.get('[data-test="cell-8/8"]').click();
-    cy.get('[data-test="cell-0/0"]').should("have.text", "0");
-    cy.get(".sudokuCell").should("have.text", "01020304050607080");
     cy.get(".selected").should("have.length", 1);
     cy.checkA11y();
   });
@@ -47,7 +44,6 @@ describe("Sudoku E2E Tests", () => {
     cy.get('[data-test="cell-0/0"]').click().type("{ctrl}", { release: false });
     cy.get('[data-test="cell-0/8"]').type("{ctrl}", { release: false }).click();
     cy.get('[data-test="cell-8/0"]').type("{ctrl}", { release: false }).click();
-    cy.get(".sudokuCell").should("have.text", "0872");
     cy.get(".selected").should("have.length", 3);
   });
 
