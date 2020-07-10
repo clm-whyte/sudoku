@@ -48,6 +48,21 @@ class SudokuGrid extends React.Component {
     this.setState({ cells });
   }
 
+  selectCells(row, col) {
+    const cells = this.state.cells.slice();
+    const cursorRow = this.state.cursorLocation.row;
+    const cursorCol = this.state.cursorLocation.col;
+    const clickRow = row;
+    const clickCol = col;
+
+    if (cursorRow === clickRow) {
+      for (let i = cursorCol; i <= clickCol; i++) {
+        cells[cursorRow][i] = { value: cells[row][col].value, selected: true };
+      }
+    }
+    this.setState({ cells });
+  }
+
   handleClick(row, col, e) {
     if (!e.ctrlKey) {
       this.deselectAllCells();
@@ -55,7 +70,11 @@ class SudokuGrid extends React.Component {
     if (!e.shiftKey) {
       this.moveCursor(row, col);
     }
-    this.selectCell(row, col);
+    if (e.shiftKey) {
+      this.selectCells(row, col);
+    } else {
+      this.selectCell(row, col);
+    }
   }
 
   renderCell(row, col) {
