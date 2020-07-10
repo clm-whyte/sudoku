@@ -47,19 +47,19 @@ describe("Sudoku E2E Tests", () => {
     cy.get(".selected").should("have.length", 3);
   });
 
-  // it("clicks one cell, and then SHIFT + Clicks a cell in the middle of the same row and then at the end of the same row", () => {
-  //   cy.get('[data-test="cell-0/0"]')
-  //     .click()
-  //     .type("{shift}", { release: false });
-  //   cy.get('[data-test="cell-0/4"]')
-  //     .type("{shift}", { release: false })
-  //     .click();
-  //   cy.get('[data-test="cell-0/8"]')
-  //     .type("{shift}", { release: false })
-  //     .click();
-  //   cy.get(".sudokuCell").should("have.text", "048");
-  //   cy.get(".selected").should("have.length", 9);
-  // });
+  it("clicks one cell, and then SHIFT + Clicks a cell in the middle of the same row and then at the end of the same row", () => {
+    cy.get('[data-test="cell-0/0"]')
+      .click()
+      .type("{shift}", { release: false });
+    cy.get('[data-test="cell-0/4"]')
+      .type("{shift}", { release: false })
+      .click();
+    cy.get(".selected").should("have.length", 5);
+    cy.get('[data-test="cell-0/8"]')
+      .type("{shift}", { release: false })
+      .click();
+    cy.get(".selected").should("have.length", 9);
+  });
 
   // it("clicks one cell, and then SHIFT + Clicks a cell in the middle of the same column and then at the end of the same column", () => {
   //   cy.get('[data-test="cell-0/0"]')

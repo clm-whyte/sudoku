@@ -126,10 +126,12 @@ describe("Clicking on the grid", () => {
     cell0.simulate("click");
     cell4.simulate("click", { shiftKey: true });
 
+    expect(sudokuGrid.state().cells).toEqual(gridZeroToFour);
     expect(sudokuGrid.state().cursorLocation).toEqual({ row: 0, col: 0 });
 
     cell8.simulate("click", { shiftKey: true });
 
+    expect(sudokuGrid.state().cells).toEqual(gridZeroToEight);
     expect(sudokuGrid.state().cursorLocation).toEqual({ row: 0, col: 0 });
 
     sudokuGrid.unmount();
