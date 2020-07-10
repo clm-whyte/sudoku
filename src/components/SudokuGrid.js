@@ -55,7 +55,6 @@ class SudokuGrid extends React.Component {
     if (!e.shiftKey) {
       this.moveCursor(row, col);
     }
-    this.setValue(row, col);
     this.selectCell(row, col);
   }
 
