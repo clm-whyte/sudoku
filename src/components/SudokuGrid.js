@@ -33,7 +33,7 @@ class SudokuGrid extends React.Component {
   setValue(row, col) {
     const cells = this.state.cells.slice();
     cells[row][col] = {
-      value: cells[row].length * row + col,
+      value: cells[row][col].value,
       selected: cells[row][col].selected,
     };
     this.setState({ cells });

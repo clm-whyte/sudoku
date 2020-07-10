@@ -16,15 +16,15 @@ describe("Clicking on the grid", () => {
   it("clicks on multiple cells on the same row one after the other", () => {
     const gridAfter = emptyGrid();
     gridAfter[0] = [
-      { value: 0, selected: false },
-      { value: 1, selected: false },
-      { value: 2, selected: false },
       { value: null, selected: false },
       { value: null, selected: false },
       { value: null, selected: false },
       { value: null, selected: false },
       { value: null, selected: false },
-      { value: 8, selected: true },
+      { value: null, selected: false },
+      { value: null, selected: false },
+      { value: null, selected: false },
+      { value: null, selected: true },
     ];
 
     const sudokuGrid = mount(<SudokuGrid />);
@@ -49,7 +49,7 @@ describe("Clicking on the grid", () => {
   it("clicks on a cell and then CTRL + Clicks two more", () => {
     const gridAfter = emptyGrid();
     gridAfter[0] = [
-      { value: 0, selected: true },
+      { value: null, selected: true },
       { value: null, selected: false },
       { value: null, selected: false },
       { value: null, selected: false },
@@ -57,10 +57,10 @@ describe("Clicking on the grid", () => {
       { value: null, selected: false },
       { value: null, selected: false },
       { value: null, selected: false },
-      { value: 8, selected: true },
+      { value: null, selected: true },
     ];
     gridAfter[8] = [
-      { value: 72, selected: true },
+      { value: null, selected: true },
       { value: null, selected: false },
       { value: null, selected: false },
       { value: null, selected: false },
@@ -92,11 +92,11 @@ describe("Clicking on the grid", () => {
   it("clicks on a cell and then SHIFT + Clicks two more on the same row", () => {
     const gridZeroToFour = emptyGrid();
     gridZeroToFour[0] = [
-      { value: 0, selected: true },
       { value: null, selected: true },
       { value: null, selected: true },
       { value: null, selected: true },
-      { value: 4, selected: true },
+      { value: null, selected: true },
+      { value: null, selected: true },
       { value: null, selected: false },
       { value: null, selected: false },
       { value: null, selected: false },
@@ -104,15 +104,15 @@ describe("Clicking on the grid", () => {
     ];
     const gridZeroToEight = emptyGrid();
     gridZeroToEight[0] = [
-      { value: 0, selected: true },
       { value: null, selected: true },
       { value: null, selected: true },
       { value: null, selected: true },
-      { value: 4, selected: true },
       { value: null, selected: true },
       { value: null, selected: true },
       { value: null, selected: true },
-      { value: 8, selected: true },
+      { value: null, selected: true },
+      { value: null, selected: true },
+      { value: null, selected: true },
     ];
 
     const sudokuGrid = mount(<SudokuGrid />);
