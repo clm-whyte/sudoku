@@ -14,13 +14,7 @@ describe("Sudoku E2E Tests", () => {
     cy.get('[data-test^="cell-"]').should("have.length", 81);
   });
 
-  it("clicks the first cell", () => {
-    cy.get('[data-test="cell-0/0"]').click();
-    cy.get('[data-test="cell-0/0"]').should("have.class", "selected");
-    cy.checkA11y();
-  });
-
-  it("clicks multiple cells one after the other, clicked cells should be numbered, but only the last cell should be selected", () => {
+  it("clicks multiple cells one after the other, but only the last cell should be selected", () => {
     cy.get('[data-test="cell-0/0"]').click();
     cy.get('[data-test="cell-1/1"]').click();
     cy.get('[data-test="cell-2/2"]').click();
@@ -31,6 +25,9 @@ describe("Sudoku E2E Tests", () => {
     cy.get('[data-test="cell-7/7"]').click();
     cy.get('[data-test="cell-8/8"]').click();
     cy.get(".selected").should("have.length", 1);
+    cy.get('[data-test="cell-8/8"]')
+      .should("have.class", "cursor")
+      .should("have.class", "selected");
     cy.checkA11y();
   });
 
@@ -93,6 +90,31 @@ describe("Sudoku E2E Tests", () => {
     cy.get('[data-test="cell-4/2"]').should("have.class", "selected");
     cy.get('[data-test="cell-4/3"]').should("have.class", "selected");
     cy.get('[data-test="cell-4/4"]').should("have.class", "selected");
+
+    cy.checkA11y();
+  });
+
+  it("area selects cells, using SHIFT+Click in different boxes", () => {
+    cy.get('[data-test="cell-5/0"]')
+      .click()
+      .type("{shift}", { release: false });
+    cy.get('[data-test="cell-3/2"]').click().type("{shift}", { release: true });
+    cy.get(".selected").should("have.length", 9);
+    cy.get('[data-test="cell-5/0"]').should("have.class", "cursor");
+
+    cy.get('[data-test="cell-3/3"]')
+      .click()
+      .type("{shift}", { release: false });
+    cy.get('[data-test="cell-5/5"]').click().type("{shift}", { release: true });
+    cy.get(".selected").should("have.length", 9);
+    cy.get('[data-test="cell-3/3"]').should("have.class", "cursor");
+
+    cy.get('[data-test="cell-3/8"]')
+      .click()
+      .type("{shift}", { release: false });
+    cy.get('[data-test="cell-5/6"]').click().type("{shift}", { release: true });
+    cy.get(".selected").should("have.length", 9);
+    cy.get('[data-test="cell-3/8"]').should("have.class", "cursor");
 
     cy.checkA11y();
   });
