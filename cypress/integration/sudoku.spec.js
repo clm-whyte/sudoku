@@ -9,15 +9,9 @@ describe("Sudoku E2E Tests", () => {
   });
 
   it("verifies that the empty grid is rendered correctly", () => {
-    // count number of grids
     cy.get('[data-test="grid"]').should("have.length", 1);
-    //count number of rows
-    cy.get('[data-test="grid"]').children().should("have.length", 9);
-    // count number of cells
-    cy.get('[data-test="grid"]')
-      .children()
-      .children()
-      .should("have.length", 81);
+    cy.get('[data-test^="row-"]').should("have.length", 9);
+    cy.get('[data-test^="cell-"]').should("have.length", 81);
   });
 
   it("clicks the first cell", () => {
