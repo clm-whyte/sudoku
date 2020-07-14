@@ -1,20 +1,25 @@
 /// <reference types="Cypress" />
-describe("Sudoku E2E Tests", () => {
+describe("initial loading of the game", () => {
   beforeEach(() => {
     cy.visit("http://localhost:3000");
     cy.injectAxe();
   });
-  it("Has no detectable a11y violations on load", () => {
-    cy.checkA11y();
-  });
 
   it("verifies that the empty grid is rendered correctly", () => {
+    cy.checkA11y();
     cy.get('[data-test="grid"]').should("have.length", 1);
     cy.get('[data-test^="row-"]').should("have.length", 9);
     cy.get('[data-test^="cell-"]').should("have.length", 81);
   });
+});
 
-  it("clicks multiple cells one after the other, but only the last cell should be selected", () => {
+describe("cell selection", () => {
+  beforeEach(() => {
+    cy.visit("http://localhost:3000");
+    cy.injectAxe();
+  });
+
+  it("clicks multiple cells one after the other", () => {
     cy.get('[data-test="cell-0/0"]').click();
     cy.get('[data-test="cell-1/1"]').click();
     cy.get('[data-test="cell-2/2"]').click();
@@ -31,7 +36,7 @@ describe("Sudoku E2E Tests", () => {
     cy.checkA11y();
   });
 
-  it("clicks one cell, and then CTRL + Clicks two more cells", () => {
+  it("clicks one cell, and then ctrl+clicks two more cells", () => {
     cy.get('[data-test="cell-0/0"]').click().type("{ctrl}", { release: false });
     cy.get('[data-test="cell-0/8"]').type("{ctrl}", { release: false }).click();
     cy.get('[data-test="cell-8/0"]').type("{ctrl}", { release: false }).click();
@@ -39,7 +44,7 @@ describe("Sudoku E2E Tests", () => {
     cy.checkA11y();
   });
 
-  it("clicks the centre cell, then SHIFT+Clicks an outer cell in each cardinal direction", () => {
+  it("clicks centre cell then shift+clicks each outer cell in a cardinal direction", () => {
     cy.get('[data-test="cell-0/0"]').should("have.class", "cursor");
 
     cy.get('[data-test="cell-4/4"]')
@@ -94,7 +99,7 @@ describe("Sudoku E2E Tests", () => {
     cy.checkA11y();
   });
 
-  it("area selects cells, using SHIFT+Click in different boxes", () => {
+  it("area selects cells, using shift+click in different boxes", () => {
     cy.get('[data-test="cell-5/0"]')
       .click()
       .type("{shift}", { release: false });
