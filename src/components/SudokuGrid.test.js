@@ -45,9 +45,7 @@ describe("clicking on the grid", () => {
     expect(sudokuGrid.state().cursorLocation).toEqual({ row: 0, col: 8 });
     sudokuGrid.unmount();
   });
-});
 
-describe("ctrl+clicking on the grid", () => {
   it("clicks on a cell and then ctrl+clicks two more", () => {
     const gridAfter = emptyGrid();
     gridAfter[0] = [
@@ -90,9 +88,7 @@ describe("ctrl+clicking on the grid", () => {
 
     sudokuGrid.unmount();
   });
-});
 
-describe("shift+clicking on the grid", () => {
   it("clicks on a cell and then shift+clicks two subsequent cells on the same row", () => {
     const gridZeroToFour = emptyGrid();
     gridZeroToFour[0] = [
