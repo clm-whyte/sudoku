@@ -30,7 +30,7 @@ The cells are **Material UI** Buttons which have been restyled using some Sassy 
 
 ## Position
 
-A cell's position in the grid determines it's outline.  
+A cell's position in the grid determines its outline.  
 If it's in the first row/column, it will have a thick top/left border respectively.  
 Otherwise, every 3rd row/column is given a thick bottom/right border, based on the following lines of code:
 
@@ -50,17 +50,27 @@ ${props.row % 3 === 2 ? "boxBoundaryBottom" : ""}
 By default a cell is unselected.  
 An unselected cell has a white background and may or may not be filled with a value.
 
-On click, any currently selected cells are deselected, and the clicked cell becomes the only selected cell, as shown by the pink background colour.
+A selected cell is denoted by a pink background colour.
 
 <Preview>
   <Story id="cell--empty" />
   <Story id="cell--selected" />
 </Preview>
 
+## Cursor
+
+There can be only one "cursor" Cell on the grid.  
+The cursor shows the current position of the "active" cell. By default, this is at position `0, 0` and unselected.
+
+<Preview>
+  <Story id="cell--empty" />
+  <Story id="cell--cursor" />
+  <Story id="cell--cursor-and-selected" />
+</Preview>
+
 ## Value
 
-The value of a cell is displayed in the centre. Currently, a value is applied when clicked.  
-That is to say, all cells default to a value of `null`. When clicked, the cell's value is set to the cell's ID, it's position in the grid.
+The cell values default to a value of `null`.
 
 <Preview>
   <Story id="cell--empty" />

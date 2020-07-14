@@ -65,3 +65,13 @@ export const InnerCorner = () => {
 export const Selected = () => {
   return <SudokuCell {...cellData} selected={true} {...actionsData} />;
 };
+
+export const Cursor = () => {
+  return <SudokuCell {...cellData} cursor={true} {...actionsData} />;
+};
+
+export const CursorAndSelected = () => {
+  return (
+    <SudokuCell {...cellData} cursor={true} selected={true} {...actionsData} />
+  );
+};
