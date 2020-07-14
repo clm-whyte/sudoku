@@ -1,19 +1,21 @@
 // Cell
-$cellSize: 34px;
+$cellSize: 56px;
 $cellBorder: 1px solid rgba(0, 0, 0, 0.23);
 $boxBorder: 1px solid black;
 $selectedColor: lightGrey;
 $cursorBorder: 1px dashed darkBlue;
+$cellValueSize: 1.5rem;
 
 .sudokuCell {
-  max-width: 34px;
+  max-width: $cellSize;
   max-height: $cellSize;
-  min-width: 34px;
+  min-width: $cellSize;
   min-height: $cellSize;
   border: $cellBorder;
   border-radius: 0;
   background-color: white;
   color: navy;
+  font-size: $cellValueSize;
 }
 .boxBoundaryTop {
   border-top: $boxBorder;

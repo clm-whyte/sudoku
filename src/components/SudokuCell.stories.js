@@ -1,5 +1,6 @@
 import React from "react";
 import { action } from "@storybook/addon-actions";
+import { withA11y } from "@storybook/addon-a11y";
 import { number, boolean } from "@storybook/addon-knobs";
 
 import mdx from "./SudokuCell.mdx";
@@ -9,7 +10,9 @@ import SudokuCell from "./SudokuCell";
 export default {
   component: SudokuCell,
   title: "Cell",
+
   excludeStories: /.*Data$/,
+  decorators: [withA11y],
   parameters: {
     docs: {
       page: mdx,
