@@ -12,7 +12,7 @@ const emptyGrid = () => {
   return grid;
 };
 
-describe("Clicking on the grid", () => {
+describe("clicking on the grid", () => {
   it("clicks on multiple cells on the same row one after the other", () => {
     const gridAfter = emptyGrid();
     gridAfter[0] = [
@@ -45,8 +45,10 @@ describe("Clicking on the grid", () => {
     expect(sudokuGrid.state().cursorLocation).toEqual({ row: 0, col: 8 });
     sudokuGrid.unmount();
   });
+});
 
-  it("clicks on a cell and then CTRL + Clicks two more", () => {
+describe("ctrl+clicking on the grid", () => {
+  it("clicks on a cell and then ctrl+clicks two more", () => {
     const gridAfter = emptyGrid();
     gridAfter[0] = [
       { value: null, selected: true },
@@ -88,8 +90,10 @@ describe("Clicking on the grid", () => {
 
     sudokuGrid.unmount();
   });
+});
 
-  it("clicks on a cell and then SHIFT + Clicks two subsequent cells on the same row", () => {
+describe("shift+clicking on the grid", () => {
+  it("clicks on a cell and then shift+clicks two subsequent cells on the same row", () => {
     const gridZeroToFour = emptyGrid();
     gridZeroToFour[0] = [
       { value: null, selected: true },
@@ -137,7 +141,7 @@ describe("Clicking on the grid", () => {
     sudokuGrid.unmount();
   });
 
-  it("clicks on the end cell and then SHIFT + Clicks two previous cells on the same row", () => {
+  it("clicks on the end cell and then shift+clicks two previous cells on the same row", () => {
     const gridEightToFour = emptyGrid();
     gridEightToFour[0] = [
       { value: null, selected: false },

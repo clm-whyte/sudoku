@@ -3,7 +3,7 @@ import React from "react";
 import { shallow } from "enzyme";
 import SudokuCell from "./SudokuCell";
 
-describe("Cells have different borders dependant on location", () => {
+describe("rendering different borders dependant on location", () => {
   it("cell in top left has thick border on top and left", () => {
     const cell = shallow(<SudokuCell row="0" col="0" />);
     expect(cell.html()).toContain("boxBoundaryLeft", "boxBoundaryTop");
@@ -29,7 +29,7 @@ describe("Cells have different borders dependant on location", () => {
   });
 });
 
-describe("Cells are rendered with different classes based on which props are passed", () => {
+describe("passing props to cell", () => {
   it("prop 'selected=true' renders class 'selected'", () => {
     const cell = shallow(<SudokuCell selected="true" />);
     expect(cell.html()).toContain("selected");
