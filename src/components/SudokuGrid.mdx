@@ -4,10 +4,41 @@ import SudokuGrid from "./SudokuGrid.js";
 # Grid
 
 The Grid component currently handles the most of the logic for rendering the Cells.  
-The grid is a 2D array of cells which contain a `value` and `selected` property.
-
-Since the cell is a functional component, all of the props that the cell requires are passed to it via the Grid component.
+Since `SudokuCell` is a functional component, all of the props that the cell requires are passed to it via the Grid component.
 
 <Preview>
   <Story id="grid--grid" />
 </Preview>
+
+## State
+
+The `state` has two objects:
+
+- a 2D array of `cells` objects which contain `value` and `selected` properties
+- a `cursorLocation` object containing `row` and `col` properties
+
+## Cell Selection
+
+The cell selection ought to be intuitive to anyone who has used spreadsheets before.
+
+### Single Click
+
+Using the left mouse button to click will:
+
+- move the cursor to the new cell
+- deselect all cells then select the new cell
+
+### [CTRL] + Click
+
+Using the left mouse button + `[CTRL]` to click will:
+
+- move the cursor to the new cell
+- append the new cell to the other selected cell(s)
+
+### [SHIFT] + Click
+
+Using the left mouse button + `[SHIFT]` to click will:
+
+- keep the cursor at its current location
+- deselect all cells and then...
+- ...select all cells within the corners of the cursor and the new cell

@@ -34,6 +34,74 @@ exports[`Storyshots Cell Cell 1`] = `
 </button>
 `;
 
+exports[`Storyshots Cell Cursor 1`] = `
+<button
+  aria-label={1}
+  className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        
+        cursor
+        "
+  data-test={1}
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={0}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  />
+</button>
+`;
+
+exports[`Storyshots Cell Cursor And Selected 1`] = `
+<button
+  aria-label={1}
+  className="MuiButtonBase-root MuiButton-root MuiButton-outlined sudokuCell
+        
+        
+        
+        
+        selected
+        cursor
+        "
+  data-test={1}
+  disabled={false}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onDragLeave={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onMouseDown={[Function]}
+  onMouseLeave={[Function]}
+  onMouseUp={[Function]}
+  onTouchEnd={[Function]}
+  onTouchMove={[Function]}
+  onTouchStart={[Function]}
+  tabIndex={0}
+  type="button"
+>
+  <span
+    className="MuiButton-label"
+  />
+</button>
+`;
+
 exports[`Storyshots Cell Empty 1`] = `
 <button
   aria-label={1}
